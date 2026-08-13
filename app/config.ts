@@ -1,0 +1,35 @@
+type BusinessInfo = {
+  companyName: string;
+  shortName: string;
+  ownerName: string;
+  phone: string;
+  email: string;
+  city: string;
+  state: string;
+  stateName: string;
+  domain: string;
+  businessHours: string;
+};
+
+export const businessInfo: BusinessInfo = {
+  companyName: "Six Fold Solutions LLC",
+  shortName: "Six Fold Solutions",
+  ownerName: "Jason",
+  phone: "",
+  email: "",
+  city: "Alton",
+  state: "IL",
+  stateName: "Illinois",
+  domain: "sixfoldsolutionsllc.com",
+  businessHours: "",
+};
+
+export const siteUrl = `https://${businessInfo.domain}`;
+
+export const navigation = [
+  { href: "/", label: "Home" },
+  { href: "/services", label: "Services" },
+  { href: "/about", label: "About" },
+  { href: "/service-area", label: "Service Area" },
+  { href: "/contact", label: "Contact" },
+] as const;

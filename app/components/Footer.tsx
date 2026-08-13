@@ -1,0 +1,58 @@
+import Link from "next/link";
+import { businessInfo, navigation } from "../config";
+
+export function Footer() {
+  return (
+    <footer className="site-footer">
+      <div className="shell footer-grid">
+        <div className="footer-brand-block">
+          <Link className="brand brand-footer" href="/">
+            <span className="brand-mark" aria-hidden="true">
+              6F
+            </span>
+            <span>
+              <strong>SIX FOLD</strong>
+              <small>SOLUTIONS LLC</small>
+            </span>
+          </Link>
+          <p>
+            Mississippi River marine delivery services for barges, towboats,
+            vessels, and crews in the surrounding Alton region.
+          </p>
+          <span className="veteran-label">Veteran Owned &amp; Operated</span>
+        </div>
+
+        <div>
+          <h2>Company</h2>
+          <ul className="footer-links">
+            {navigation.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href}>{item.label}</Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/privacy">Privacy Policy</Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Request Service</h2>
+          <p>{businessInfo.city}, {businessInfo.stateName}</p>
+          <p>
+            Phone and email will appear here when dispatch contact details are
+            configured.
+          </p>
+          <Link className="footer-cta" href="/request-delivery">
+            Start a delivery request <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </div>
+      <div className="shell footer-bottom">
+        <p>© {new Date().getFullYear()} {businessInfo.companyName}</p>
+        <p>Alton, Illinois</p>
+      </div>
+    </footer>
+  );
+}
+
