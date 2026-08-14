@@ -43,10 +43,10 @@ export default function BlogPage() {
               aria-label="Read What to Include in a Shoreside Delivery Request"
             >
               <Image
-                src="/og-v2.png"
-                alt="Towboat and barges on the Mississippi River near Alton"
+                src="/six-fold-cover.png"
+                alt="Six Fold Solutions river delivery cover featuring a towboat and barges near Alton"
                 fill
-                sizes="(max-width: 980px) 100vw, 52vw"
+                sizes="(max-width: 1180px) 100vw, 1180px"
               />
             </Link>
             <div className="blog-card-copy">
