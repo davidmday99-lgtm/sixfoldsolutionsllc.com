@@ -34,6 +34,16 @@ export function Footer() {
             <li>
               <Link href="/privacy">Privacy Policy</Link>
             </li>
+            <li>
+              <a
+                href="https://www.marinetraffic.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MarineTraffic (opens in a new tab)"
+              >
+                MarineTraffic
+              </a>
+            </li>
           </ul>
         </div>
 
