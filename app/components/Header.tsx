@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { businessInfo, navigation } from "../config";
@@ -21,13 +22,14 @@ export function Header() {
       </div>
       <div className="shell nav-inner">
         <Link className="brand" href="/" onClick={() => setOpen(false)}>
-          <span className="brand-mark" aria-hidden="true">
-            6F
-          </span>
-          <span>
-            <strong>SIX FOLD</strong>
-            <small>SOLUTIONS LLC</small>
-          </span>
+          <Image
+            className="brand-logo"
+            src="/six-fold-logo.webp"
+            alt="Six Fold Solutions LLC"
+            width={282}
+            height={175}
+            priority
+          />
         </Link>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
@@ -78,4 +80,3 @@ export function Header() {
     </header>
   );
 }
-

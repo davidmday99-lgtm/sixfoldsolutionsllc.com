@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { businessInfo, navigation } from "../config";
 
@@ -7,13 +8,13 @@ export function Footer() {
       <div className="shell footer-grid">
         <div className="footer-brand-block">
           <Link className="brand brand-footer" href="/">
-            <span className="brand-mark" aria-hidden="true">
-              6F
-            </span>
-            <span>
-              <strong>SIX FOLD</strong>
-              <small>SOLUTIONS LLC</small>
-            </span>
+            <Image
+              className="brand-logo brand-logo-footer"
+              src="/six-fold-logo.webp"
+              alt="Six Fold Solutions LLC"
+              width={282}
+              height={175}
+            />
           </Link>
           <p>
             Mississippi River marine delivery services for barges, towboats,
