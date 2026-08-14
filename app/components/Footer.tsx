@@ -10,10 +10,10 @@ export function Footer() {
           <Link className="brand brand-footer" href="/">
             <Image
               className="brand-logo brand-logo-footer"
-              src="/six-fold-logo.webp"
+              src="/six-fold-logo.png"
               alt="Six Fold Solutions LLC"
-              width={282}
-              height={175}
+              width={2000}
+              height={800}
             />
           </Link>
           <p>

@@ -14,9 +14,13 @@ export function Header() {
         <div className="shell utility-inner">
           <p>Commercial marine delivery • Alton, Illinois</p>
           <p className="utility-contact">
-            {businessInfo.phone
-              ? `Dispatch: ${businessInfo.phone}`
-              : "Dispatch contact available soon"}
+            {businessInfo.phone ? (
+              <a href={`tel:${businessInfo.phone.replace(/[^+\d]/g, "")}`}>
+                Dispatch: {businessInfo.phone}
+              </a>
+            ) : (
+              "Dispatch contact available soon"
+            )}
           </p>
         </div>
       </div>
@@ -24,10 +28,10 @@ export function Header() {
         <Link className="brand" href="/" onClick={() => setOpen(false)}>
           <Image
             className="brand-logo"
-            src="/six-fold-logo.webp"
+            src="/six-fold-logo.png"
             alt="Six Fold Solutions LLC"
-            width={282}
-            height={175}
+            width={2000}
+            height={800}
             priority
           />
         </Link>
