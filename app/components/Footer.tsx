@@ -39,10 +39,8 @@ export function Footer() {
         <div>
           <h2>Request Service</h2>
           <p>{businessInfo.city}, {businessInfo.stateName}</p>
-          <p>
-            Phone and email will appear here when dispatch contact details are
-            configured.
-          </p>
+          <p><a href={`tel:${businessInfo.phone.replace(/[^+\d]/g, "")}`}>{businessInfo.phone}</a></p>
+          <p><a href={`mailto:${businessInfo.email}`}>{businessInfo.email}</a></p>
           <Link className="footer-cta" href="/request-delivery">
             Start a delivery request <span aria-hidden="true">→</span>
           </Link>
@@ -55,4 +53,3 @@ export function Footer() {
     </footer>
   );
 }
-

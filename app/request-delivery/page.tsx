@@ -13,8 +13,8 @@ export default function RequestDeliveryPage() {
     <>
       <PageHero eyebrow="REQUEST SERVICE" title="Tell Us What Your Vessel Needs">
         <p>
-          Share the request details below. Six Fold will review the items,
-          locations, access, timing, and current availability before confirming service.
+          Share the request details below. The form prepares an email to Six Fold
+          with the items, locations, access, and timing in one clear message.
         </p>
       </PageHero>
       <section className="section request-section">
@@ -33,7 +33,7 @@ export default function RequestDeliveryPage() {
             </ul>
             <div className="aside-note">
               <strong>Time-sensitive request?</strong>
-              <p>Submit the details so the request can be reviewed. Delivery timing is confirmed only after coordination.</p>
+              <p>Prepare and send the delivery email so the request can be reviewed. Delivery timing is confirmed only after coordination.</p>
             </div>
           </aside>
         </div>
@@ -41,4 +41,3 @@ export default function RequestDeliveryPage() {
     </>
   );
 }
-

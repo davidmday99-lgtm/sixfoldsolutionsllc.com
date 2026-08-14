@@ -14,9 +14,9 @@ type BusinessInfo = {
 export const businessInfo: BusinessInfo = {
   companyName: "Six Fold Solutions LLC",
   shortName: "Six Fold Solutions",
-  ownerName: "Jason",
-  phone: "",
-  email: "",
+  ownerName: "Jason Thompson",
+  phone: "618-974-1278",
+  email: "JtThompson@6foldsolutions.com",
   city: "Alton",
   state: "IL",
   stateName: "Illinois",

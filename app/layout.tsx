@@ -65,6 +65,8 @@ const localBusinessJsonLd = {
     "@type": "Person",
     name: businessInfo.ownerName,
   },
+  telephone: businessInfo.phone,
+  email: businessInfo.email,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -86,4 +88,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-

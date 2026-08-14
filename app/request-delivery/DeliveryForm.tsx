@@ -1,14 +1,13 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { businessInfo } from "../config";
 
-type FormStatus = "idle" | "submitting" | "success" | "error";
+type FormStatus = "idle" | "success";
 
 export function DeliveryForm() {
   const [status, setStatus] = useState<FormStatus>("idle");
-  const [message, setMessage] = useState("");
-
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
 
@@ -17,39 +16,50 @@ export function DeliveryForm() {
       return;
     }
 
-    setStatus("submitting");
-    setMessage("");
+    const data = new FormData(form);
+    if (String(data.get("website") ?? "").trim()) return;
 
-    try {
-      const response = await fetch("/api/delivery", {
-        method: "POST",
-        body: new FormData(form),
-      });
+    const lines = [
+      `Full Name: ${data.get("fullName")}`,
+      `Company: ${data.get("company") || "Not provided"}`,
+      `Vessel / Towboat: ${data.get("vesselName")}`,
+      `Phone: ${data.get("phone")}`,
+      `Email: ${data.get("email") || "Not provided"}`,
+      `Pickup Location: ${data.get("pickupLocation")}`,
+      `Delivery Location: ${data.get("deliveryLocation")}`,
+      `Dock / Terminal: ${data.get("dockTerminal") || "Not provided"}`,
+      `Requested Date: ${data.get("requestedDate")}`,
+      `Requested Time: ${data.get("requestedTime") || "Not provided"}`,
+      "",
+      "Items Requested:",
+      String(data.get("deliveryNeeds")),
+      "",
+      "Additional Instructions:",
+      String(data.get("instructions") || "None"),
+    ];
 
-      if (!response.ok) throw new Error("Request could not be submitted");
+    const subject = `Delivery Request — ${data.get("vesselName")}`;
+    const mailto = `mailto:${businessInfo.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
 
-      form.reset();
-      setStatus("success");
-      setMessage(
-        "Your request has been recorded. A dispatch email connection still needs to be configured before this form can notify Six Fold automatically.",
-      );
-    } catch {
-      setStatus("error");
-      setMessage(
-        "Your request could not be submitted. Please review the form and try again.",
-      );
-    }
+    setStatus("success");
+    window.location.href = mailto;
   }
 
   if (status === "success") {
     return (
       <div className="form-confirmation" role="status">
         <span aria-hidden="true">✓</span>
-        <p className="eyebrow">REQUEST RECEIVED</p>
-        <h2>Thank you. Your details are ready for review.</h2>
-        <p>{message}</p>
+        <p className="eyebrow">EMAIL READY</p>
+        <h2>Your delivery request is ready to send.</h2>
+        <p>
+          Your email app should open with the request addressed to {businessInfo.email}.
+          Send that email to complete your request, or call {businessInfo.phone}.
+        </p>
+        <a className="btn btn-primary" href={`mailto:${businessInfo.email}`}>
+          Email Six Fold
+        </a>
         <button className="btn btn-secondary" type="button" onClick={() => setStatus("idle")}>
-          Submit another request
+          Edit request
         </button>
       </div>
     );
@@ -112,11 +122,10 @@ export function DeliveryForm() {
         </label>
       </div>
 
-      {status === "error" && <p className="form-error" role="alert">{message}</p>}
       <div className="form-submit-row">
         <p><b aria-hidden="true">*</b> Required fields</p>
-        <button className="btn btn-primary submit-button" type="submit" disabled={status === "submitting"}>
-          {status === "submitting" ? "Submitting…" : "Submit Delivery Request"}
+        <button className="btn btn-primary submit-button" type="submit">
+          Prepare Delivery Email
           <span aria-hidden="true">→</span>
         </button>
       </div>
@@ -144,4 +153,3 @@ function FormField({
     </label>
   );
 }
-

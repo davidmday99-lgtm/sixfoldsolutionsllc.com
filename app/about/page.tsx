@@ -56,8 +56,8 @@ export default function AboutPage() {
           </div>
           <div>
             <p>
-              Six Fold Solutions is owned and operated by Jason, a United States
-              Marine Corps veteran. His approach to the business centers on
+              Six Fold Solutions is owned and operated by Jason Thompson, a United
+              States Marine Corps veteran. His approach to the business centers on
               reliability, responsibility, clear communication, and getting the
               job done as agreed.
             </p>
@@ -96,4 +96,3 @@ export default function AboutPage() {
     </>
   );
 }
-
