@@ -22,12 +22,14 @@ export function ScrollToTop() {
     const firstFrame = window.requestAnimationFrame(() => {
       secondFrame = window.requestAnimationFrame(resetScroll);
     });
-    const finalReset = window.setTimeout(resetScroll, 150);
+    const resetTimers = [150, 400, 750].map((delay) =>
+      window.setTimeout(resetScroll, delay),
+    );
 
     return () => {
       window.cancelAnimationFrame(firstFrame);
       window.cancelAnimationFrame(secondFrame);
-      window.clearTimeout(finalReset);
+      resetTimers.forEach((timer) => window.clearTimeout(timer));
     };
   }, [pathname]);
 
