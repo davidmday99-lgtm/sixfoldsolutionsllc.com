@@ -270,7 +270,13 @@ p { margin: 0; }
 .delivery-location-card h3 { font-size: 1.65rem; }
 .delivery-location-card address { margin: 1rem 0; color: var(--white); font-style: normal; font-size: 1.08rem; font-weight: 800; line-height: 1.5; }
 .delivery-location-card > p:not(.eyebrow) { margin: 0 0 1rem !important; color: #bdc9d0 !important; font-size: .88rem !important; }
-.delivery-location-card > a { color: var(--white); font-size: .76rem; font-weight: 900; letter-spacing: .05em; text-decoration: underline; text-underline-offset: 4px; text-transform: uppercase; }
+.facility-contact { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 1rem 0; padding: .8rem 0; border-top: 1px solid rgba(255,255,255,.14); border-bottom: 1px solid rgba(255,255,255,.14); }
+.facility-contact span { color: #9fb0bb; font-size: .7rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.facility-contact a { color: var(--white); font-size: 1.05rem; font-weight: 900; white-space: nowrap; }
+.facility-links { display: grid; gap: .55rem; margin: 1rem 0 1.25rem; }
+.facility-links a, .location-map-link { color: var(--white); font-size: .76rem; font-weight: 900; letter-spacing: .04em; text-decoration: underline; text-underline-offset: 4px; }
+.facility-links a { color: #cbd9e1; }
+.location-map-link { text-transform: uppercase; }
 .access-section { padding: 5rem 0; background: var(--navy-900); color: var(--white); }
 .access-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 4rem; align-items: end; }
 .access-grid > p { color: #c3ced4; }

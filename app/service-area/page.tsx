@@ -48,7 +48,28 @@ export default function ServiceAreaPage() {
                 Delivery access and timing must be arranged and confirmed for
                 each request.
               </p>
+              <div className="facility-contact">
+                <span>Wood River facility phone</span>
+                <a href="tel:6182515704">618-251-5704</a>
+              </div>
+              <div className="facility-links" aria-label="Wood River facility information">
+                <a
+                  href="https://ergonmarine.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ergon Marine &amp; Industrial Supply
+                </a>
+                <a
+                  href="https://www.magnoliamarine.com/contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Magnolia Marine Wood River contact
+                </a>
+              </div>
               <a
+                className="location-map-link"
                 href="https://www.google.com/maps/search/?api=1&query=150+N.+Amoco+Cutoff%2C+Wood+River%2C+IL+62095"
                 target="_blank"
                 rel="noopener noreferrer"
