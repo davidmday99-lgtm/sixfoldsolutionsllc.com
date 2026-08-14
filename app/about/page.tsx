@@ -83,7 +83,7 @@ export default function AboutPage() {
               <h2>What customers can expect</h2>
             </div>
             <p>
-              Good logistics support starts with the basics and takes them seriously.
+              At Six Fold Solutions, we get the basics right and take every delivery seriously.
             </p>
           </div>
           <div className="values-grid">
