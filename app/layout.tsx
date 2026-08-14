@@ -29,14 +29,14 @@ export const metadata: Metadata = {
     title: "River Delivery. Done Right.",
     description:
       "Dependable shoreside delivery for barges, towboats and marine crews on the Mississippi River.",
-    images: [{ url: "/og.png", width: 1733, height: 907, alt: "Six Fold Solutions river delivery" }],
+    images: [{ url: "/og-v2.png", width: 1733, height: 907, alt: "Six Fold Solutions river delivery on the Mississippi River" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "River Delivery. Done Right.",
     description:
       "Dependable shoreside delivery for Mississippi River vessels and crews.",
-    images: ["/og.png"],
+    images: ["/og-v2.png"],
   },
   icons: {
     icon: "/favicon.png",
