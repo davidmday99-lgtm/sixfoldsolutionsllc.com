@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description,
     publishedTime: "2026-08-13",
     authors: [businessInfo.ownerName],
-    images: ["/og-v2.png"],
+    images: ["/six-fold-cover.png"],
   },
 };
 
@@ -30,7 +30,7 @@ const articleJsonLd = {
   datePublished: "2026-08-13",
   dateModified: "2026-08-13",
   mainEntityOfPage: articleUrl,
-  image: `${siteUrl}/og-v2.png`,
+  image: `${siteUrl}/six-fold-cover.png`,
   author: { "@type": "Person", name: businessInfo.ownerName },
   publisher: { "@type": "Organization", name: businessInfo.companyName },
 };
