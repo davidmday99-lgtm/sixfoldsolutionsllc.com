@@ -55,7 +55,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-image-wrap" aria-hidden="true">
           <Image
-            src="/og.png"
+            src="/new-hero.png"
             alt=""
             fill
             priority
