@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { CTAButton } from "../components/CTAButton";
 import { PageHero } from "../components/PageHero";
 
@@ -28,7 +29,13 @@ export default function AboutPage() {
       <section className="section story-section">
         <div className="shell story-grid">
           <div className="story-marker" aria-hidden="true">
-            <span>6F</span>
+            <Image
+              className="story-logo"
+              src="/six-fold-logo.png"
+              alt=""
+              width={2000}
+              height={800}
+            />
             <i />
             <small>ALTON • IL</small>
           </div>
