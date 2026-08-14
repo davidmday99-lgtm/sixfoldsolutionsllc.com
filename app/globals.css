@@ -242,10 +242,10 @@ p { margin: 0; }
 /* About */
 .story-section { background: var(--white); }
 .story-grid { display: grid; grid-template-columns: .7fr 1.3fr; gap: clamp(3rem, 8vw, 8rem); align-items: center; }
-.story-marker { aspect-ratio: 1; max-width: 380px; width: 100%; display: grid; place-items: center; position: relative; background: repeating-linear-gradient(135deg, var(--steel-100) 0 10px, #e5e9eb 10px 20px); border: 1px solid var(--steel-200); }
+.story-marker { aspect-ratio: 1; max-width: 380px; width: 100%; display: grid; place-items: center; position: relative; background: linear-gradient(90deg, #001023 0%, #031c3d 55%, #042d63 100%); border: 1px solid rgba(255,255,255,.12); }
 .story-logo { width: 86%; height: auto; transform: translateY(-8%); filter: drop-shadow(0 8px 16px rgba(7,19,31,.18)); }
 .story-marker i { position: absolute; left: 15%; right: 15%; bottom: 23%; height: 6px; background: var(--red); }
-.story-marker small { position: absolute; bottom: 13%; font-weight: 900; letter-spacing: .22em; }
+.story-marker small { position: absolute; bottom: 13%; color: var(--white); font-weight: 900; letter-spacing: .22em; }
 .story-grid h2 { margin-bottom: 1.5rem; }
 .story-grid > div:last-child > p:not(.eyebrow) { margin-top: 1rem; color: var(--muted); font-size: 1.03rem; }
 .veteran-story { padding: 5rem 0; background: var(--navy-900); color: var(--white); }
