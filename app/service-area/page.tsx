@@ -6,7 +6,7 @@ import { ServiceAreaVisual } from "../components/ServiceAreaVisual";
 export const metadata: Metadata = {
   title: "Mississippi River Service Area",
   description:
-    "Marine and vessel delivery support from Alton, Illinois for customers in the surrounding Mississippi River region.",
+    "Marine and vessel delivery support from Alton, Illinois, including an arranged Wood River delivery point at Upper Mississippi River Mile 198.",
 };
 
 export default function ServiceAreaPage() {
@@ -32,13 +32,29 @@ export default function ServiceAreaPage() {
               docks, terminals, landings, or meeting points.
             </p>
             <p>
-              Exact service locations depend on the details of the request. This
-              page is ready to be expanded with confirmed cities, terminals, docks,
-              and service zones as the business defines them.
+              One established delivery point is in Wood River at Upper
+              Mississippi River Mile 198. Every delivery is scheduled in advance
+              so vessel, timing, facility access, and handoff details can be
+              confirmed before arrival.
             </p>
-            <div className="area-callout">
-              <strong>Outside our normal area?</strong>
-              <span>Contact us. We may still be able to help.</span>
+            <div className="delivery-location-card">
+              <p className="eyebrow">WOOD RIVER DROP-OFF LOCATION</p>
+              <h3>Upper Mississippi River • Mile 198</h3>
+              <address>
+                150 N. Amoco Cutoff<br />
+                Wood River, IL 62095
+              </address>
+              <p>
+                Delivery access and timing must be arranged and confirmed for
+                each request.
+              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=150+N.+Amoco+Cutoff%2C+Wood+River%2C+IL+62095"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open location in Google Maps <span aria-hidden="true">-&gt;</span>
+              </a>
             </div>
             <CTAButton href="/request-delivery">Check Your Request</CTAButton>
           </div>
@@ -54,6 +70,8 @@ export default function ServiceAreaPage() {
             Provide the vessel name, dock or terminal details, desired meeting
             point, requested timing, and any relevant access instructions. Six
             Fold will review the information and coordinate the agreed handoff.
+            Do not arrive at the Wood River location until access and timing have
+            been confirmed.
           </p>
         </div>
       </section>

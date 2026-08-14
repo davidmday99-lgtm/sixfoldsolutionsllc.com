@@ -264,6 +264,13 @@ p { margin: 0; }
 .area-page-grid > div:last-child > p:not(.eyebrow) { margin-top: 1rem; color: var(--muted); }
 .area-callout { display: flex; flex-direction: column; margin: 1.6rem 0 2rem; padding: 1rem 1.2rem; border-left: 4px solid var(--red); background: var(--white); }
 .area-callout span { color: var(--muted); }
+.delivery-location-card { margin: 1.8rem 0 2rem; padding: 1.5rem; border-left: 5px solid var(--red); background: var(--navy-900); color: var(--white); box-shadow: 0 14px 35px rgba(7,19,31,.12); }
+.delivery-location-card .eyebrow { margin-bottom: .75rem; color: #ff7b80; }
+.delivery-location-card .eyebrow::before { background: #ff7b80; }
+.delivery-location-card h3 { font-size: 1.65rem; }
+.delivery-location-card address { margin: 1rem 0; color: var(--white); font-style: normal; font-size: 1.08rem; font-weight: 800; line-height: 1.5; }
+.delivery-location-card > p:not(.eyebrow) { margin: 0 0 1rem !important; color: #bdc9d0 !important; font-size: .88rem !important; }
+.delivery-location-card > a { color: var(--white); font-size: .76rem; font-weight: 900; letter-spacing: .05em; text-decoration: underline; text-underline-offset: 4px; text-transform: uppercase; }
 .access-section { padding: 5rem 0; background: var(--navy-900); color: var(--white); }
 .access-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 4rem; align-items: end; }
 .access-grid > p { color: #c3ced4; }

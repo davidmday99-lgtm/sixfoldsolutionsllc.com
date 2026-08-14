@@ -52,6 +52,12 @@ export default function AboutPage() {
               The goal is simple: make the shoreside part of the request clear,
               professional, and dependable.
             </p>
+            <p>
+              An established delivery point is located at 150 N. Amoco Cutoff in
+              Wood River, Illinois, at Upper Mississippi River Mile 198. Each
+              handoff is arranged in advance with location, access, and timing
+              confirmed before arrival.
+            </p>
           </div>
         </div>
       </section>
