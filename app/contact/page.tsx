@@ -64,7 +64,7 @@ export default function ContactPage() {
               item information in one place.
             </p>
             <CTAButton href="/request-delivery">Request Delivery</CTAButton>
-            <Link className="text-link-light" href="/services">
+            <Link className="text-link-light" href="/services" scroll={false}>
               Review delivery services <span aria-hidden="true">→</span>
             </Link>
           </aside>

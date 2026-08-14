@@ -25,7 +25,7 @@ export function Header() {
         </div>
       </div>
       <div className="shell nav-inner">
-        <Link className="brand" href="/" onClick={() => setOpen(false)}>
+        <Link className="brand" href="/" scroll={false} onClick={() => setOpen(false)}>
           <Image
             className="brand-logo"
             src="/six-fold-logo.png"
@@ -38,11 +38,11 @@ export function Header() {
 
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navigation.map((item) => (
-            <Link href={item.href} key={item.href}>
+            <Link href={item.href} key={item.href} scroll={false}>
               {item.label}
             </Link>
           ))}
-          <Link className="nav-cta" href="/request-delivery">
+          <Link className="nav-cta" href="/request-delivery" scroll={false}>
             Request Delivery <span aria-hidden="true">→</span>
           </Link>
         </nav>
@@ -68,13 +68,19 @@ export function Header() {
       >
         <div className="shell mobile-nav-inner">
           {navigation.map((item) => (
-            <Link href={item.href} key={item.href} onClick={() => setOpen(false)}>
+            <Link
+              href={item.href}
+              key={item.href}
+              scroll={false}
+              onClick={() => setOpen(false)}
+            >
               {item.label}
             </Link>
           ))}
           <Link
             className="nav-cta"
             href="/request-delivery"
+            scroll={false}
             onClick={() => setOpen(false)}
           >
             Request Delivery <span aria-hidden="true">→</span>

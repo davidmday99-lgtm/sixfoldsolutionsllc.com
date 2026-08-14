@@ -7,8 +7,6 @@ export function ScrollToTop() {
   const pathname = usePathname();
 
   useEffect(() => {
-    let secondFrame = 0;
-
     const resetScroll = () => {
       const root = document.documentElement;
       const previousBehavior = root.style.scrollBehavior;
@@ -19,17 +17,10 @@ export function ScrollToTop() {
     };
 
     resetScroll();
-    const firstFrame = window.requestAnimationFrame(() => {
-      secondFrame = window.requestAnimationFrame(resetScroll);
-    });
-    const resetTimers = [150, 400, 750].map((delay) =>
-      window.setTimeout(resetScroll, delay),
-    );
+    const frame = window.requestAnimationFrame(resetScroll);
 
     return () => {
-      window.cancelAnimationFrame(firstFrame);
-      window.cancelAnimationFrame(secondFrame);
-      resetTimers.forEach((timer) => window.clearTimeout(timer));
+      window.cancelAnimationFrame(frame);
     };
   }, [pathname]);
 

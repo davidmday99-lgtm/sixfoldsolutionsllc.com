@@ -9,7 +9,7 @@ export function MobileActionBar() {
   return (
     <nav className="mobile-action-bar" aria-label="Quick actions">
       <Link href={callHref}>Call</Link>
-      <Link href="/request-delivery">Request Delivery</Link>
+      <Link href="/request-delivery" scroll={false}>Request Delivery</Link>
     </nav>
   );
 }

@@ -40,6 +40,7 @@ export default function BlogPage() {
             <Link
               className="blog-card-image"
               href="/blog/what-to-include-in-a-shoreside-delivery-request"
+              scroll={false}
               aria-label="Read What to Include in a Shoreside Delivery Request"
             >
               <Image
@@ -65,6 +66,7 @@ export default function BlogPage() {
                 <Link
                   className="btn btn-secondary"
                   href="/blog/what-to-include-in-a-shoreside-delivery-request"
+                  scroll={false}
                 >
                   Read the Article <span aria-hidden="true">-&gt;</span>
                 </Link>

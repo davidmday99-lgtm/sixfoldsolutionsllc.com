@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div className="footer-brand-block">
-          <Link className="brand brand-footer" href="/">
+          <Link className="brand brand-footer" href="/" scroll={false}>
             <Image
               className="brand-logo brand-logo-footer"
               src="/six-fold-logo.png"
@@ -28,11 +28,11 @@ export function Footer() {
           <ul className="footer-links">
             {navigation.map((item) => (
               <li key={item.href}>
-                <Link href={item.href}>{item.label}</Link>
+                <Link href={item.href} scroll={false}>{item.label}</Link>
               </li>
             ))}
             <li>
-              <Link href="/privacy">Privacy Policy</Link>
+              <Link href="/privacy" scroll={false}>Privacy Policy</Link>
             </li>
             <li>
               <a
@@ -52,7 +52,7 @@ export function Footer() {
           <p>{businessInfo.city}, {businessInfo.stateName}</p>
           <p><a href={`tel:${businessInfo.phone.replace(/[^+\d]/g, "")}`}>{businessInfo.phone}</a></p>
           <p><a href={`mailto:${businessInfo.email}`}>{businessInfo.email}</a></p>
-          <Link className="footer-cta" href="/request-delivery">
+          <Link className="footer-cta" href="/request-delivery" scroll={false}>
             Start a delivery request <span aria-hidden="true">→</span>
           </Link>
         </div>

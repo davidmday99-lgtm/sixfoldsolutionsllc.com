@@ -21,7 +21,7 @@ export function CTAButton({
   };
 
   return (
-    <Link className={`${styles[variant]} ${className}`} href={href}>
+    <Link className={`${styles[variant]} ${className}`} href={href} scroll={false}>
       <span>{children}</span>
       <span aria-hidden="true">→</span>
     </Link>

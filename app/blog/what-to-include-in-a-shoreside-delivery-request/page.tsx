@@ -172,7 +172,7 @@ export default function DeliveryRequestArticle() {
                 Tell Jason what you need picked up, where it needs to go, and
                 when you need it.
               </p>
-              <Link className="btn btn-primary" href="/request-delivery">
+              <Link className="btn btn-primary" href="/request-delivery" scroll={false}>
                 Request Delivery <span aria-hidden="true">-&gt;</span>
               </Link>
             </aside>
