@@ -8,7 +8,6 @@ type BusinessInfo = {
   state: string;
   stateName: string;
   domain: string;
-  businessHours: string;
 };
 
 export const businessInfo: BusinessInfo = {
@@ -21,7 +20,6 @@ export const businessInfo: BusinessInfo = {
   state: "IL",
   stateName: "Illinois",
   domain: "sixfoldsolutionsllc.com",
-  businessHours: "",
 };
 
 export const siteUrl = `https://${businessInfo.domain}`;
