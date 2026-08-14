@@ -52,10 +52,6 @@ export default function ContactPage() {
                   )}
                 </dd>
               </div>
-              <div>
-                <dt>Business Hours</dt>
-                <dd>{businessInfo.businessHours || <span>To be configured</span>}</dd>
-              </div>
             </dl>
           </div>
 
@@ -77,4 +73,3 @@ export default function ContactPage() {
     </>
   );
 }
-
