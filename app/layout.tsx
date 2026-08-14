@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { MobileActionBar } from "./components/MobileActionBar";
+import { ScrollToTop } from "./components/ScrollToTop";
 import { businessInfo, siteUrl } from "./config";
 import "./globals.css";
 
@@ -77,6 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to main content
         </a>
         <Header />
+        <ScrollToTop />
         <main id="main-content">{children}</main>
         <Footer />
         <MobileActionBar />
