@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "River Delivery Blog",
   description:
     "Practical guidance and updates for barges, towboats, vessels, and marine crews from Six Fold Solutions LLC in Alton, Illinois.",
+  alternates: { canonical: "/blog" },
 };
 
 const posts = [

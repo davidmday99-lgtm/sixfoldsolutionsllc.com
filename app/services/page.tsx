@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Marine Delivery Services",
   description:
     "Vessel supplies, crew provisions, parts, equipment, and local pickup support for commercial river vessels around Alton, Illinois.",
+  alternates: { canonical: "/services" },
 };
 
 const services = [

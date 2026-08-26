@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Request a Delivery",
   description:
     "Request vessel supply pickup and delivery service from Six Fold Solutions in the Alton, Illinois Mississippi River region.",
+  alternates: { canonical: "/request-delivery" },
 };
 
 export default function RequestDeliveryPage() {

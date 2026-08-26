@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { CallButton, CTAButton } from "./components/CTAButton";
 import { ServiceAreaVisual } from "./components/ServiceAreaVisual";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const services = [
   {

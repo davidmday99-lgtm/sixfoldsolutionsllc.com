@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Mississippi River Service Area",
   description:
     "Marine and vessel delivery support from Alton, Illinois, including an arranged Wood River delivery point at Upper Mississippi River Mile 198.",
+  alternates: { canonical: "/service-area" },
 };
 
 export default function ServiceAreaPage() {

@@ -5,6 +5,7 @@ import { businessInfo } from "../config";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: `Privacy policy for ${businessInfo.companyName}.`,
+  alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };
 

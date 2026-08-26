@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Contact Six Fold Solutions LLC in Alton, Illinois about Mississippi River marine delivery service.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

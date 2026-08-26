@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Learn about Six Fold Solutions LLC, a veteran-owned commercial marine delivery business based in Alton, Illinois.",
+  alternates: { canonical: "/about" },
 };
 
 const values = [
