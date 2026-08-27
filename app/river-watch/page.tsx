@@ -49,10 +49,10 @@ const sources = [
   },
   {
     label: "Survey Updates",
-    title: "USACE St. Louis Dredge & Channel Patrol Surveys",
+    title: "USACE E-Hydro Survey Map",
     description:
-      "Recent survey postings for specific reaches. A survey is a dated snapshot, not a vessel arrival schedule or navigation instruction.",
-    href: "https://www.mvs.usace.army.mil/Missions/Navigation/Surveys/Dredge/",
+      "USACE's map-based archive for available hydrographic surveys. A survey is a dated snapshot, not a vessel arrival schedule or navigation instruction.",
+    href: "https://www.arcgis.com/apps/dashboards/4b8f2ba307684cf597617bf1b6d2f85d",
     cadence: "As posted",
   },
 ] as const;
@@ -109,9 +109,15 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              Six Fold will add a daily River Watch note when official information provides useful planning
-              context for the Alton-area river community. Each note will identify its source and date. If a
-              source has a newer update, the source itself controls.
+              <strong>Morning check: August 27, 2026.</strong> The latest USACE St. Louis weekly channel
+              condition report listed on the official site is dated August 12. The district&apos;s dredge-survey
+              list includes postings through August 20. Those dated sources are useful context, not a live
+              condition or a vessel-access commitment.
+            </p>
+            <p>
+              This page receives a dated morning check every day. Each note identifies its official source;
+              if no material update is available, it will say so rather than repeat older conditions as new.
+              If a source has a newer update, the source itself controls.
             </p>
             <p>
               River Watch is general information, not navigation advice, a safety directive, or a promise

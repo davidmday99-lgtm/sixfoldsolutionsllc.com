@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-a-canceled-lock-closure-still-tells-a-shoreside-delivery-team",
+    ariaLabel: "Read What a Canceled Lock Closure Still Tells a Shoreside Delivery Team",
+    dateTime: "2026-08-27",
+    dateLabel: "August 27, 2026",
+    category: "Lock Operations",
+    readTime: "5 minute read",
+    title: "What a Canceled Lock Closure Still Tells a Shoreside Delivery Team",
+    description:
+      "How recent Locks 27 and St. Louis reach updates can help a Mississippi River delivery team confirm timing without turning one notice into a promise.",
+  },
+  {
     href: "/blog/what-a-fresh-dredge-survey-can-tell-a-shoreside-delivery-team",
     ariaLabel: "Read What a Fresh Dredge Survey Can Tell a Shoreside Delivery Team",
     dateTime: "2026-08-26",
