@@ -382,6 +382,23 @@ p { margin: 0; }
 .article-byline { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--steel-200); color: var(--muted); font-size: .9rem; }
 .article-byline strong { color: var(--ink); }
 
+/* River Watch */
+.river-watch-intro { background: var(--paper); }
+.river-watch-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 3rem; }
+.river-watch-card { min-height: 280px; display: flex; flex-direction: column; padding: 1.65rem; border: 1px solid var(--steel-200); background: var(--white); }
+.river-watch-card:last-child { grid-column: 2 / span 1; }
+.river-watch-card-meta { display: flex; justify-content: space-between; gap: .8rem; color: var(--red-dark); font-size: .63rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.river-watch-card h3 { margin: 2rem 0 .85rem; }
+.river-watch-card p { color: var(--muted); font-size: .9rem; }
+.river-watch-card a { margin-top: auto; padding-top: 1.5rem; color: var(--navy-900); font-size: .72rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.river-watch-card a:hover { color: var(--red-dark); }
+.river-watch-note { padding: clamp(4.5rem, 8vw, 7rem) 0; background: var(--navy-900); color: var(--white); }
+.river-watch-note-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 7vw, 7rem); align-items: start; }
+.river-watch-note h2 { max-width: 520px; }
+.river-watch-note-grid > div:last-child { display: grid; gap: 1rem; color: #c3ced4; font-size: 1.03rem; }
+.river-watch-action { background: var(--white); }
+.river-watch-action .btn { margin-top: 1.5rem; }
+
 /* Footer and mobile actions */
 .site-footer { padding: 5rem 0 1.5rem; background: #050e16; color: #b1bec6; }
 .footer-grid { display: grid; grid-template-columns: 1.3fr .65fr 1fr; gap: clamp(2rem, 6vw, 6rem); padding-bottom: 3.5rem; }
@@ -451,6 +468,9 @@ p { margin: 0; }
   .trust-inner { min-height: 64px; justify-content: center; flex-wrap: wrap; gap: .45rem .7rem; padding: .75rem 0; font-size: .58rem; }
   .service-grid { grid-template-columns: 1fr; }
   .service-card, .service-card:nth-child(4), .service-card:nth-child(5) { min-height: 0; grid-column: auto; }
+  .river-watch-grid { grid-template-columns: 1fr; }
+  .river-watch-card:last-child { grid-column: auto; }
+  .river-watch-note-grid { grid-template-columns: 1fr; }
   .service-card-rule { margin: 1.2rem 0 2rem; }
   .steps-grid { grid-template-columns: 1fr; gap: 1.2rem; }
   .steps-grid li { padding: 1.2rem 1rem 2rem; }
