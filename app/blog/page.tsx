@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-a-fresh-dredge-survey-can-tell-a-shoreside-delivery-team",
+    ariaLabel: "Read What a Fresh Dredge Survey Can Tell a Shoreside Delivery Team",
+    dateTime: "2026-08-26",
+    dateLabel: "August 26, 2026",
+    category: "River Conditions",
+    readTime: "5 minute read",
+    title: "What a Fresh Dredge Survey Can Tell a Shoreside Delivery Team",
+    description:
+      "How to use current USACE survey updates as a planning signal for Mississippi River shoreside deliveries without confusing them for a delivery schedule.",
+  },
+  {
     href: "/blog/three-official-checks-before-you-set-a-river-delivery-window",
     ariaLabel: "Read Three Official Checks Before You Set a River Delivery Window",
     dateTime: "2026-08-20",
