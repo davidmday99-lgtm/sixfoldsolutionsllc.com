@@ -61,26 +61,27 @@ const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Latest river summary reviewed at 6:34 AM CDT on September 2, 2026 was the 900 AM CDT September 1 issuance, listing Alton at 19.7 feet and Mel Price Lock and Dam at 5.0 feet.",
+      "Reviewed at 8:29 AM CDT on September 3, 2026. The newest river summary available in this morning's check remained the 900 AM CDT September 2 issuance, listing Alton at 19.1 feet and Mel Price Lock and Dam at 5.2 feet.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
-    detail: "Latest weekly channel condition report listed on the district site remained the August 26, 2026 posting in this morning's review.",
+    detail:
+      "Reviewed at 8:29 AM CDT on September 3, 2026. The district status-report page still listed August 26, 2026 as the latest weekly channel-condition posting during this morning's check.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Most recent Middle Mississippi dredge-survey postings on the district page still included the August 20, 2026 uploads reviewed this morning, including MRM 155.0-156.7 and MRM 160.2-161.4 near the Alton reach.",
+      "Reviewed at 8:29 AM CDT on September 3, 2026. The district dredge-survey page showed newer September 1 survey work uploaded on September 2, including Middle Mississippi MRM 166.4-168.2 and 170.7-172.0 plus a Melvin Price Pool MRM 240.0-241.0 upload dated September 1.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "The active St. Louis District notice feed reviewed on September 2, 2026 still included the August 2, 2026 Lock 25 construction update as the newest nearby district notice in this morning's check, with daily daytime closures scheduled Monday through Saturday through September 19.",
+      "Reviewed at 8:29 AM CDT on September 3, 2026. The St. Louis District notice search did not surface a newer September navigation notice in this morning's review than the nearby August 14 Lock 27 cancellation posting and the August 2 Lock 25 construction update with daytime closures scheduled through September 19.",
   },
   {
     name: "Coast Guard District 8 Broadcast / Local Notices to Mariners",
     detail:
-      "District 8 Upper Mississippi notice search was reviewed on September 2, 2026, and no newer indexed Upper Mississippi Coast Guard item was identified in this morning's check than the late-August dredging notice referenced in the prior update.",
+      "Reviewed at 8:29 AM CDT on September 3, 2026. The District 8 Upper Mississippi broadcast-notice search still pointed to late-August indexed items in this morning's review, and I did not identify a newer September Upper Mississippi notice before publishing this check.",
   },
 ] as const;
 
@@ -136,10 +137,10 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 2, 2026 at 6:34 AM CDT.</strong> Official sources reviewed this
-              morning showed a newer NWS river-stage summary for the Alton and Melvin Price snapshot, while
-              the latest St. Louis USACE weekly report, survey postings, and nearby district notice pages
-              still pointed to late-August or early-August items already in circulation.
+              <strong>Morning check: September 3, 2026 at 8:29 AM CDT.</strong> Official sources reviewed this
+              morning did not yet show a newer NWS river-stage summary or a newer weekly St. Louis channel
+              report than yesterday's check, but the USACE survey pages did show fresh September 1 survey work
+              uploaded on September 2 in the Middle Mississippi and Melvin Price pool listings.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -152,12 +153,13 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 2: the newest official change I confirmed this morning was the
-              September 1 NWS river summary, which showed Alton at 19.7 feet and Mel Price Lock and Dam at
-              5.0 feet. The latest St. Louis District weekly report still showed August 26, the most recent
-              nearby Middle Mississippi survey uploads reviewed remained August 20, and the active district
-              notice feed still pointed to the August 2 Lock 25 construction update with daytime closures
-              through September 19. That is planning context, not a same-morning vessel-access commitment.
+              Planning context for September 3: the clearest new official item in this morning's review was on
+              the USACE survey pages, which added September 1 survey work uploaded on September 2 in Middle
+              Mississippi reaches MRM 166.4-168.2 and 170.7-172.0, plus a Melvin Price Pool MRM 240.0-241.0
+              posting uploaded September 1. The newest NWS river summary I could confirm before this update
+              remained the 900 AM CDT September 2 issuance showing Alton at 19.1 feet and Mel Price Lock and
+              Dam at 5.2 feet, while the weekly St. Louis status-report page still showed August 26. That is
+              planning context, not a same-morning vessel-access commitment.
             </p>
             <p>
               This page receives a dated morning check every day. If no material official update is available,
