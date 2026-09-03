@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/why-a-falling-st-louis-river-forecast-still-belongs-in-a-delivery-plan",
+    ariaLabel: "Read Why A Falling St. Louis River Forecast Still Belongs In A Delivery Plan",
+    dateTime: "2026-09-03",
+    dateLabel: "September 3, 2026",
+    category: "River Conditions",
+    readTime: "5 minute read",
+    title: "Why A Falling St. Louis River Forecast Still Belongs In A Delivery Plan",
+    description:
+      "How early-September river forecasts, fresh survey postings, and active dredging can help a Mississippi River delivery team keep a realistic handoff window.",
+  },
+  {
     href: "/blog/what-a-canceled-lock-closure-still-tells-a-shoreside-delivery-team",
     ariaLabel: "Read What a Canceled Lock Closure Still Tells a Shoreside Delivery Team",
     dateTime: "2026-08-27",
