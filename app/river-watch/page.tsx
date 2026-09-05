@@ -61,27 +61,27 @@ const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed at 7:57 AM CDT on September 4, 2026. The newest river summary visible during this morning's check was the 900 AM CDT September 3 issuance, listing Alton at 19.5 feet and Mel Price Lock and Dam at 4.4 feet.",
+      "Reviewed at 6:32 AM CDT on September 5, 2026. The newest river summary visible during this morning's check was the 900 AM CDT September 4 issuance, listing Alton at 19.4 feet and Mel Price Lock and Dam at 4.3 feet.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed at 7:57 AM CDT on September 4, 2026. The district status-report page showed September 2, 2026 as the latest weekly channel-condition posting during this morning's check.",
+      "Reviewed at 6:32 AM CDT on September 5, 2026. The district status-report page showed September 2, 2026 as the latest weekly channel-condition posting during this morning's check.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed at 7:57 AM CDT on September 4, 2026. The district dredge-survey page still showed the recent September 1 and September 2 survey uploads, including Middle Mississippi MRM 166.4-168.2 and 170.7-172.0 plus a Melvin Price Pool MRM 240.0-241.0 upload dated September 1.",
+      "Reviewed at 6:32 AM CDT on September 5, 2026. The district dredge-survey page still showed the recent September 1 and September 2 survey uploads, including Middle Mississippi MRM 166.4-168.2 and 170.7-172.0 plus a Melvin Price Pool MRM 240.0-241.0 upload dated September 1.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed at 7:57 AM CDT on September 4, 2026. The St. Louis District notice review still pointed to the August 2, 2026 Lock 25 protection-cell construction update as the most current nearby notice I could confirm during this morning's check.",
+      "Reviewed at 6:32 AM CDT on September 5, 2026. The St. Louis District notice review still pointed to the August 2, 2026 Lock 25 protection-cell construction update as the most current nearby notice I could confirm during this morning's check.",
   },
   {
     name: "Coast Guard District 8 Broadcast / Local Notices to Mariners",
     detail:
-      "Reviewed at 7:57 AM CDT on September 4, 2026. The District 8 broadcast-notice search still pointed to late-August Upper Mississippi-area results during this morning's review, and I did not identify a newer September Upper Mississippi item before publishing this check.",
+      "Reviewed at 6:32 AM CDT on September 5, 2026. I reviewed the District 8 Upper Mississippi broadcast-notice search and did not identify a newer September Upper Mississippi item before publishing this check.",
   },
 ] as const;
 
@@ -137,10 +137,10 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 4, 2026 at 7:57 AM CDT.</strong> Official sources reviewed this
-              morning showed a newer NWS river-stage summary and a newer St. Louis weekly status-report posting
-              than yesterday's check, while the survey pages still pointed to the same September 1 and
-              September 2 uploads already visible yesterday.
+              <strong>Morning check: September 5, 2026 at 6:32 AM CDT.</strong> Official sources reviewed this
+              morning showed a newer NWS river-stage summary than yesterday's check. No material new official
+              channel-report, survey, navigation-notice, or Coast Guard update was identified in this morning's
+              review.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -153,13 +153,10 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 4: the clearest same-morning change was that the NWS St. Louis
-              river summary had advanced to the 900 AM CDT September 3 issuance, showing Alton at 19.5 feet
-              and Mel Price Lock and Dam at 4.4 feet, while the St. Louis weekly status-report page had also
-              advanced to a September 2 posting. The survey pages still reflected the recent September 1 work
-              uploaded on September 2 in Middle Mississippi reaches MRM 166.4-168.2 and 170.7-172.0 plus the
-              August 27 Melvin Price Pool MRM 240.0-241.0 survey uploaded September 1. That is planning
-              context, not a same-morning vessel-access commitment.
+              Planning context for September 5: the NWS St. Louis river summary had advanced to the 900 AM CDT
+              September 4 issuance, showing Alton at 19.4 feet and Mel Price Lock and Dam at 4.3 feet. The
+              remaining official sources reviewed did not show a material update beyond the postings already
+              identified yesterday. That is planning context, not a same-morning vessel-access commitment.
             </p>
             <p>
               This page receives a dated morning check every day. If no material official update is available,
