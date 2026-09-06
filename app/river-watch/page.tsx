@@ -61,27 +61,27 @@ const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed at 6:32 AM CDT on September 5, 2026. The newest river summary visible during this morning's check was the 900 AM CDT September 4 issuance, listing Alton at 19.4 feet and Mel Price Lock and Dam at 4.3 feet.",
+      "Reviewed at 6:32 AM CDT on September 6, 2026. The newest river summary visible during this morning's check was the 900 AM CDT September 5 issuance, listing Alton at 19.3 feet and Mel Price Lock and Dam at 3.2 feet.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed at 6:32 AM CDT on September 5, 2026. The district status-report page showed September 2, 2026 as the latest weekly channel-condition posting during this morning's check.",
+      "Reviewed at 6:32 AM CDT on September 6, 2026. No weekly channel-condition posting newer than the September 2, 2026 report was identified during this morning's check.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed at 6:32 AM CDT on September 5, 2026. The district dredge-survey page still showed the recent September 1 and September 2 survey uploads, including Middle Mississippi MRM 166.4-168.2 and 170.7-172.0 plus a Melvin Price Pool MRM 240.0-241.0 upload dated September 1.",
+      "Reviewed at 6:32 AM CDT on September 6, 2026. The district dredge-survey page still showed the recent September 1 and September 2 survey uploads, including Middle Mississippi MRM 166.4-168.2 and 170.7-172.0 plus a Melvin Price Pool MRM 240.0-241.0 upload dated September 1.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed at 6:32 AM CDT on September 5, 2026. The St. Louis District notice review still pointed to the August 2, 2026 Lock 25 protection-cell construction update as the most current nearby notice I could confirm during this morning's check.",
+      "Reviewed at 6:32 AM CDT on September 6, 2026. No newer material St. Louis District notice affecting the nearby Alton/Melvin Price picture was identified during this morning's check.",
   },
   {
     name: "Coast Guard District 8 Broadcast / Local Notices to Mariners",
     detail:
-      "Reviewed at 6:32 AM CDT on September 5, 2026. I reviewed the District 8 Upper Mississippi broadcast-notice search and did not identify a newer September Upper Mississippi item before publishing this check.",
+      "Reviewed at 6:32 AM CDT on September 6, 2026. I reviewed the District 8 Upper Mississippi broadcast-notice search and did not identify a material new September Upper Mississippi item before publishing this check.",
   },
 ] as const;
 
@@ -137,9 +137,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 5, 2026 at 6:32 AM CDT.</strong> Official sources reviewed this
-              morning showed a newer NWS river-stage summary than yesterday's check. No material new official
-              channel-report, survey, navigation-notice, or Coast Guard update was identified in this morning's
+              <strong>Morning check: September 6, 2026 at 6:32 AM CDT.</strong> Official sources reviewed this
+              morning showed a newer NWS river-stage summary than yesterday&apos;s check. No material new official
+              channel-report, survey, navigation-notice, or Coast Guard update was identified in this morning&apos;s
               review.
             </p>
             <p>
@@ -153,8 +153,8 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 5: the NWS St. Louis river summary had advanced to the 900 AM CDT
-              September 4 issuance, showing Alton at 19.4 feet and Mel Price Lock and Dam at 4.3 feet. The
+              Planning context for September 6: the NWS St. Louis river summary had advanced to the 900 AM CDT
+              September 5 issuance, showing Alton at 19.3 feet and Mel Price Lock and Dam at 3.2 feet. The
               remaining official sources reviewed did not show a material update beyond the postings already
               identified yesterday. That is planning context, not a same-morning vessel-access commitment.
             </p>
