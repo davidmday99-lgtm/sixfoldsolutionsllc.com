@@ -61,27 +61,27 @@ const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed at 6:34 AM CDT on September 7, 2026. The newest river summary visible during this morning's check was the 900 AM CDT September 6 issuance, listing Alton at 19.3 feet with no 24-hour change and Mel Price Lock and Dam at 3.2 feet, up 0.1 foot over 24 hours.",
+      "Reviewed at 6:35 AM CDT on September 8, 2026. The latest available summary was issued at 9:00 AM CDT September 7: Alton 19.2 feet (reported 24-hour change 0.0), Mel Price Lock and Dam 3.0 feet (down 0.2), and St. Louis -0.7 feet (down 0.7). These are dated observations, not September 8 readings.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed at 6:34 AM CDT on September 7, 2026. No weekly channel-condition posting newer than the September 2, 2026 report was identified during this morning's check.",
+      "Reviewed at 6:35 AM CDT on September 8, 2026. September 2 remained the newest weekly channel-condition report listed; no newer posting was identified.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed at 6:34 AM CDT on September 7, 2026. The district dredge-survey page still showed the recent September 1 and September 2 survey uploads, including Middle Mississippi MRM 166.4-168.2 and 170.7-172.0 plus a Melvin Price Pool MRM 240.0-241.0 upload dated September 1.",
+      "Reviewed at 6:35 AM CDT on September 8, 2026. No newer district dredge-survey upload was identified. Middle Mississippi MRM 166.4-168.2 and 170.7-172.0 remained September 1 surveys uploaded September 2; Melvin Price Pool MRM 240.0-241.0 remained an August 27 survey uploaded September 1.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed at 6:34 AM CDT on September 7, 2026. No newer material St. Louis District notice affecting the nearby Alton/Melvin Price picture was identified during this morning's check.",
+      "Reviewed at 6:35 AM CDT on September 8, 2026. The official St. Louis District active-notice feed returned six notices, none issued since yesterday's check. No newly issued nearby notice was identified in that feed.",
   },
   {
-    name: "Coast Guard District 8 Broadcast / Local Notices to Mariners",
+    name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed at 6:34 AM CDT on September 7, 2026. The District 8 Upper Mississippi search showed SEC UMR BNM 0191-26 UPDATE-1, posted September 5, reporting mechanical dredging at Upper Mississippi River mile 172 around the clock until further notice.",
+      "Reviewed at 6:35 AM CDT on September 8, 2026. SEC UMR BNM 0199-26, issued September 7, identifies the St. Louis reach (river miles 109.9-185.4) as in the Low Water Watch phase. The September 5 mile-172 dredging notice remains an earlier posting, not a new update today.",
   },
 ] as const;
 
@@ -137,10 +137,10 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 7, 2026 at 6:34 AM CDT.</strong> Official sources reviewed this
-              morning showed a newer NWS river-stage summary and a Coast Guard Upper Mississippi dredging notice.
-              No material new USACE channel-report, survey, or nearby navigation-notice update was identified in
-              this morning&apos;s review.
+              <strong>Morning check: September 8, 2026 at 6:35 AM CDT.</strong> A new Coast Guard notice places
+              the St. Louis reach in the Low Water Watch phase. The latest NWS summary is dated September 7.
+              No material new USACE channel-report, survey, or nearby navigation-notice update was identified
+              in this morning&apos;s review.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -153,12 +153,14 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 7: the NWS St. Louis river summary had advanced to the 900 AM CDT
-              September 6 issuance, showing Alton at 19.3 feet with no 24-hour change and Mel Price Lock and Dam
-              at 3.2 feet, up 0.1 foot over 24 hours. Coast Guard SEC UMR BNM 0191-26 UPDATE-1 reports mechanical
-              dredging at Upper Mississippi River mile 172 around the clock until further notice. Consult the
-              official notice for its stated details. This is planning context, not a same-morning vessel-access
-              commitment.
+              Planning context for September 8: the September 7 NWS summary reports lower 24-hour stages at
+              Melvin Price and St. Louis. The Coast Guard&apos;s September 7{" "}
+              <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69781616" target="_blank" rel="noopener noreferrer">
+                SEC UMR BNM 0199-26
+              </a>{" "}
+              identifies Low Water Watch for St. Louis river miles 109.9-185.4. Read the official notice for
+              its stated instructions and details; these dated reports do not establish vessel access or a
+              delivery window.
             </p>
             <p>
               This page receives a dated morning check every day. If no material official update is available,
