@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-the-ihnc-lock-decision-means-for-river-logistics",
+    ariaLabel: "Read What the IHNC Lock Decision Means for River Logistics",
+    dateTime: "2026-09-10",
+    dateLabel: "September 10, 2026",
+    category: "River Infrastructure",
+    readTime: "4 minute read",
+    title: "What the IHNC Lock Decision Means for River Logistics",
+    description:
+      "What the new Corps decision advances, why the Mississippi River connection matters, and which milestones still stand between design and construction.",
+  },
+  {
     href: "/blog/why-a-falling-st-louis-river-forecast-still-belongs-in-a-delivery-plan",
     ariaLabel: "Read Why A Falling St. Louis River Forecast Still Belongs In A Delivery Plan",
     dateTime: "2026-09-03",
