@@ -57,6 +57,89 @@ const sources = [
   },
 ] as const;
 
+const dailyChecks = [
+  {
+    date: "September 10, 2026",
+    time: "6:33 AM CDT",
+    summary:
+      "The latest NWS summary available at the check showed lower stages at Melvin Price and St. Louis; no new nearby notice was identified.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
+    date: "September 9, 2026",
+    time: "6:35 AM CDT",
+    summary:
+      "A new Coast Guard notice reported scheduled repair closures at Lock and Dam 25; the latest NWS summary showed a 24-hour decline at Melvin Price and St. Louis.",
+    source: "Coast Guard notice and NWS River Summary",
+    href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69801581",
+  },
+  {
+    date: "September 8, 2026",
+    time: "6:35 AM CDT",
+    summary:
+      "A new Coast Guard notice placed the St. Louis reach in Low Water Watch; the latest NWS summary showed lower 24-hour stages at Melvin Price and St. Louis.",
+    source: "Coast Guard notice",
+    href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69781616",
+  },
+  {
+    date: "September 7, 2026",
+    time: "6:34 AM CDT",
+    summary:
+      "The latest NWS summary showed Alton steady at 19.3 feet and Mel Price up 0.1 foot over 24 hours; a Coast Guard notice reported dredging near Upper Mississippi River mile 172.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
+    date: "September 6, 2026",
+    time: "6:32 AM CDT",
+    summary:
+      "The NWS summary advanced to its September 5 issuance, showing Alton at 19.3 feet and Mel Price at 3.2 feet; no material new notice or survey item was identified.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
+    date: "September 5, 2026",
+    time: "6:32 AM CDT",
+    summary:
+      "The NWS summary advanced to its September 4 issuance, showing Alton at 19.4 feet and Mel Price at 4.3 feet; other reviewed official sources did not show a material update.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
+    date: "September 4, 2026",
+    time: "7:57 AM CDT",
+    summary:
+      "The NWS summary and the St. Louis weekly status-report listing both advanced, while survey pages continued to show the September 1 and 2 uploads already identified.",
+    source: "USACE St. Louis Weekly Status Report",
+    href: "https://www.mvs.usace.army.mil/Missions/Navigation/Status-Reports/",
+  },
+  {
+    date: "September 3, 2026",
+    time: "8:29 AM CDT",
+    summary:
+      "USACE survey pages showed September 1 field work uploaded September 2 in Middle Mississippi reaches and the Melvin Price pool; no newer NWS summary or weekly report was visible.",
+    source: "USACE E-Hydro Survey Map",
+    href: "https://www.arcgis.com/apps/dashboards/4b8f2ba307684cf597617bf1b6d2f85d",
+  },
+  {
+    date: "September 2, 2026",
+    time: "6:34 AM CDT",
+    summary:
+      "The September 1 NWS river summary showed Alton at 19.7 feet and Mel Price at 5.0 feet; other reviewed district sources remained on earlier postings.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
+    date: "September 1, 2026",
+    time: "8:19 AM CDT",
+    summary:
+      "A Coast Guard Upper Mississippi notice dated August 30 reported dredging near mile 172; the latest NWS summary then available showed Alton at 19.4 feet and Mel Price at 4.6 feet.",
+    source: "Coast Guard Broadcast Notices to Mariners",
+    href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners",
+  },
+] as const;
+
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
@@ -169,6 +252,35 @@ export default function RiverWatchPage() {
               River Watch is general information, not navigation advice, a safety directive, or a promise
               about vessel access, timing, or delivery availability.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section river-watch-history">
+        <div className="shell">
+          <div className="split-heading river-watch-history-heading">
+            <div>
+              <p className="eyebrow">ROLLING 14-DAY LOG</p>
+              <h2>Recent daily checks, kept in view.</h2>
+            </div>
+            <p>
+              The newest fourteen published checks stay here in reverse chronological order. Entries are dated
+              snapshots of the source review, not live navigation directions or delivery commitments.
+            </p>
+          </div>
+          <div className="river-watch-history-list">
+            {dailyChecks.map((check) => (
+              <article className="river-watch-history-item" key={check.date}>
+                <div className="river-watch-history-date">
+                  <time>{check.date}</time>
+                  <span>{check.time}</span>
+                </div>
+                <p>{check.summary}</p>
+                <a href={check.href} target="_blank" rel="noopener noreferrer">
+                  {check.source} <span aria-hidden="true">-&gt;</span>
+                </a>
+              </article>
+            ))}
           </div>
         </div>
       </section>

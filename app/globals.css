@@ -396,6 +396,15 @@ p { margin: 0; }
 .river-watch-note-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 7vw, 7rem); align-items: start; }
 .river-watch-note h2 { max-width: 520px; }
 .river-watch-note-grid > div:last-child { display: grid; gap: 1rem; color: #c3ced4; font-size: 1.03rem; }
+.river-watch-history { background: var(--paper); }
+.river-watch-history-heading { margin-bottom: 3rem; }
+.river-watch-history-list { border-top: 1px solid var(--steel-200); }
+.river-watch-history-item { display: grid; grid-template-columns: minmax(180px, .7fr) 2fr minmax(190px, .7fr); gap: 1.5rem; align-items: start; padding: 1.5rem 0; border-bottom: 1px solid var(--steel-200); }
+.river-watch-history-date { display: grid; gap: .3rem; color: var(--navy-900); font-size: .8rem; font-weight: 900; letter-spacing: .04em; text-transform: uppercase; }
+.river-watch-history-date span { color: var(--red-dark); font-size: .67rem; }
+.river-watch-history-item p { margin: 0; color: var(--muted); }
+.river-watch-history-item a { color: var(--navy-900); font-size: .72rem; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
+.river-watch-history-item a:hover { color: var(--red-dark); }
 .river-watch-action { background: var(--white); }
 .river-watch-action .btn { margin-top: 1.5rem; }
 
@@ -471,6 +480,7 @@ p { margin: 0; }
   .river-watch-grid { grid-template-columns: 1fr; }
   .river-watch-card:last-child { grid-column: auto; }
   .river-watch-note-grid { grid-template-columns: 1fr; }
+  .river-watch-history-item { grid-template-columns: 1fr; gap: .7rem; }
   .service-card-rule { margin: 1.2rem 0 2rem; }
   .steps-grid { grid-template-columns: 1fr; gap: 1.2rem; }
   .steps-grid li { padding: 1.2rem 1rem 2rem; }
