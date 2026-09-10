@@ -61,27 +61,27 @@ const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 9, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 8: Alton 19.2 feet (reported 24-hour change 0.0), Mel Price Lock and Dam 2.8 feet (down 0.2), and St. Louis -0.9 feet (down 0.2). These are September 8 observations, not readings from this morning.",
+      "Reviewed September 10, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 9: Alton 19.2 feet (reported 24-hour change 0.0), Mel Price Lock and Dam 2.6 feet (down 0.2), and St. Louis -1.4 feet (down 0.4). These are September 9 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 9, 2026. The retrieved official listing showed September 2 as the newest weekly report. A direct refresh was blocked by the source website, so a newer posting could not be ruled out.",
+      "Reviewed September 10, 2026. The available official listing showed September 2 as the newest weekly report. Direct refresh was blocked by the source website; a newer posting could not be ruled out.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 9, 2026. The available district dredge-survey listing showed September 1 surveys for Middle Mississippi MRM 166.4-168.2 and 170.7-172.0, uploaded September 2, and an August 27 survey for Melvin Price Pool MRM 240.0-241.0, uploaded September 1. Direct refresh was blocked; these older listings do not confirm that no newer survey exists.",
+      "Reviewed September 10, 2026. The available cached district dredge-survey listing showed September 1-2 uploads for Melvin Price Pool and the Middle Mississippi. Direct refresh was blocked, so survey freshness could not be confirmed today.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 9, 2026. The official St. Louis District active-notice feed returned six notices, none issued since yesterday's check. No newly issued nearby notice was identified in that feed.",
+      "Reviewed September 10, 2026. The official St. Louis District active-notice feed returned six notices, none issued since yesterday's check. No newly issued nearby notice was identified in that feed.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 9, 2026. The September 1-9 Upper Mississippi search returned 29 messages. Newly posted SEC UMR BNM 0202-26, dated September 8, reports scheduled repair closures at Lock and Dam 25 through September 19. The September 7 St. Louis Low Water Watch notice, SEC UMR BNM 0199-26, was rechecked as an earlier posting, not a new condition today.",
+      "Reviewed September 10, 2026. The September 9-10 search returned nine messages. Their full texts covered Missouri and Illinois River updates, Upper Mississippi dredging above mile 301, and cancellations. No new Alton/Melvin Price or Middle Mississippi condition statement was identified in those messages; this does not establish that earlier notices have ended.",
   },
 ] as const;
 
@@ -137,9 +137,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 9, 2026 at 6:35 AM CDT.</strong> A newly posted Coast Guard notice
-              reports scheduled repair closures at Lock and Dam 25. The latest NWS summary retrieved is dated
-              September 8. USACE report and survey listings were reviewed, with refresh limitations noted below.
+              <strong>Morning check: September 10, 2026 at 6:33 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 9 and reports lower stages at Melvin Price and St. Louis.
+              Official notice feeds were checked; USACE report and survey refresh limitations are noted below.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -152,19 +152,13 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 9: the September 8 NWS summary reports a 0.2-foot decline over
-              24 hours at both Melvin Price and St. Louis. The Coast Guard&apos;s September 8{" "}
-              <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69801581" target="_blank" rel="noopener noreferrer">
-                SEC UMR BNM 0202-26
+              Planning context for September 10: the September 9{" "}
+              <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
+                NWS river summary
               </a>{" "}
-              reports Lock and Dam 25 repair closures Monday through Saturday, 0700-1900, through September 19.
-              This is a newly posted notice about an existing repair period. The earlier September 7{" "}
-              <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69781616" target="_blank" rel="noopener noreferrer">
-                SEC UMR BNM 0199-26
-              </a>{" "}
-              identifies Low Water Watch for St. Louis river miles 109.9-185.4. Read the official notices for
-              their stated instructions and details; these dated reports do not establish vessel access or a
-              delivery window.
+              reports 24-hour declines of 0.2 feet at Melvin Price and 0.4 feet at St. Louis, while Alton
+              is unchanged. Those reported changes belong to the dated NWS summary; they are not new
+              measurements from this morning. River stages alone do not establish vessel access or a delivery window.
             </p>
             <p>
               This page receives a dated morning check every day. If no material official update is available,
