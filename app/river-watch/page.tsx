@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 11, 2026",
+    time: "6:33 AM CDT",
+    summary:
+      "A newly issued USACE notice says the Melvin Price auxiliary lock is closed for overhead bulkhead-crane repairs through September 16; the latest NWS summary shows Alton down 0.1 foot and Mel Price up 0.1 foot over 24 hours.",
+    source: "USACE Notice to Navigation Interests",
+    href: "https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215034&in_title_formatting=UB",
+  },
+  {
     date: "September 10, 2026",
     time: "6:33 AM CDT",
     summary:
@@ -144,27 +152,27 @@ const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 10, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 9: Alton 19.2 feet (reported 24-hour change 0.0), Mel Price Lock and Dam 2.6 feet (down 0.2), and St. Louis -1.4 feet (down 0.4). These are September 9 observations, not readings from this morning.",
+      "Reviewed September 11, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 10: Alton 19.1 feet (down 0.1), Mel Price Lock and Dam 2.8 feet (up 0.1), and St. Louis -0.9 feet (up 0.5). These are September 10 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 10, 2026. The available official listing showed September 2 as the newest weekly report. Direct refresh was blocked by the source website; a newer posting could not be ruled out.",
+      "Reviewed September 11, 2026. Direct refresh was blocked by the source website, so the previously available September 2 weekly-report listing could not be refreshed and a newer posting cannot be ruled out.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 10, 2026. The available cached district dredge-survey listing showed September 1-2 uploads for Melvin Price Pool and the Middle Mississippi. Direct refresh was blocked, so survey freshness could not be confirmed today.",
+      "Reviewed September 11, 2026. Direct refresh was blocked by the source website, so the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi could not be refreshed and survey freshness cannot be confirmed today.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 10, 2026. The official St. Louis District active-notice feed returned six notices, none issued since yesterday's check. No newly issued nearby notice was identified in that feed.",
+      "Reviewed September 11, 2026. The official St. Louis District active-notice feed returned seven notices, including a September 10 notice that the Melvin Price auxiliary lock is closed from September 8 through September 16 for overhead bulkhead-crane repairs.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 10, 2026. The September 9-10 search returned nine messages. Their full texts covered Missouri and Illinois River updates, Upper Mississippi dredging above mile 301, and cancellations. No new Alton/Melvin Price or Middle Mississippi condition statement was identified in those messages; this does not establish that earlier notices have ended.",
+      "Reviewed September 11, 2026. The September 10-11 search returned one Upper Mississippi cancellation message. It did not provide a new Alton/Melvin Price or Middle Mississippi condition statement; this does not establish that earlier notices have ended.",
   },
 ] as const;
 
@@ -220,9 +228,10 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 10, 2026 at 6:33 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 9 and reports lower stages at Melvin Price and St. Louis.
-              Official notice feeds were checked; USACE report and survey refresh limitations are noted below.
+              <strong>Morning check: September 11, 2026 at 6:33 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 10. A newly issued USACE notice reports that the Melvin Price
+              auxiliary lock is closed for repairs through September 16; USACE report and survey refresh
+              limitations are noted below.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -235,13 +244,18 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 10: the September 9{" "}
+              Planning context for September 11: the September 10{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              reports 24-hour declines of 0.2 feet at Melvin Price and 0.4 feet at St. Louis, while Alton
-              is unchanged. Those reported changes belong to the dated NWS summary; they are not new
-              measurements from this morning. River stages alone do not establish vessel access or a delivery window.
+              reports Alton down 0.1 foot, Mel Price up 0.1 foot, and St. Louis up 0.5 foot over 24 hours.
+              The September 10{" "}
+              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215034&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
+                USACE notice
+              </a>{" "}
+              says the Melvin Price auxiliary lock is closed through September 16 for overhead bulkhead-crane repairs.
+              Those reported details belong to their dated official sources; they are not new measurements from this morning.
+              River stages alone do not establish vessel access or a delivery window.
             </p>
             <p>
               This page receives a dated morning check every day. If no material official update is available,
