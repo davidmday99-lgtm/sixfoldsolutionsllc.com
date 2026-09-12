@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 12, 2026",
+    time: "6:31 AM CDT",
+    summary:
+      "A new Coast Guard Upper Mississippi notice places the Jefferson Reach, river miles 100–200, in Low Water Watch; the latest NWS summary shows Alton up 0.2 foot and Mel Price up 0.4 foot over 24 hours.",
+    source: "Coast Guard Broadcast Notice to Mariners",
+    href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69847222",
+  },
+  {
     date: "September 11, 2026",
     time: "6:33 AM CDT",
     summary:
@@ -152,27 +160,27 @@ const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 11, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 10: Alton 19.1 feet (down 0.1), Mel Price Lock and Dam 2.8 feet (up 0.1), and St. Louis -0.9 feet (up 0.5). These are September 10 observations, not readings from this morning.",
+      "Reviewed September 12, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 11: Alton 19.2 feet (up 0.2), Mel Price Lock and Dam 3.1 feet (up 0.4), and St. Louis -0.4 feet (up 0.5). These are September 11 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 11, 2026. Direct refresh was blocked by the source website, so the previously available September 2 weekly-report listing could not be refreshed and a newer posting cannot be ruled out.",
+      "Reviewed September 12, 2026. Direct refresh was blocked by the source website, so the previously available September 2 weekly-report listing could not be refreshed and a newer posting cannot be ruled out.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 11, 2026. Direct refresh was blocked by the source website, so the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi could not be refreshed and survey freshness cannot be confirmed today.",
+      "Reviewed September 12, 2026. Direct refresh was blocked by the source website, so the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi could not be refreshed and survey freshness cannot be confirmed today.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 11, 2026. The official St. Louis District active-notice feed returned seven notices, including a September 10 notice that the Melvin Price auxiliary lock is closed from September 8 through September 16 for overhead bulkhead-crane repairs.",
+      "Reviewed September 12, 2026. The official St. Louis District active-notice feed returned seven notices; its newest relevant item remains the September 10 notice that the Melvin Price auxiliary lock is closed from September 8 through September 16 for overhead bulkhead-crane repairs.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 11, 2026. The September 10-11 search returned one Upper Mississippi cancellation message. It did not provide a new Alton/Melvin Price or Middle Mississippi condition statement; this does not establish that earlier notices have ended.",
+      "Reviewed September 12, 2026. A September 11 Upper Mississippi notice, SEC UMR BNM 0209-26, identifies the Jefferson Reach (river miles 100-200) in Low Water Watch. The notice itself controls.",
   },
 ] as const;
 
@@ -228,10 +236,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 11, 2026 at 6:33 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 10. A newly issued USACE notice reports that the Melvin Price
-              auxiliary lock is closed for repairs through September 16; USACE report and survey refresh
-              limitations are noted below.
+              <strong>Morning check: September 12, 2026 at 6:31 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 11. A newly issued Coast Guard notice identifies the Jefferson
+              Reach in Low Water Watch; USACE report and survey refresh limitations are noted below.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -244,17 +251,17 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 11: the September 10{" "}
+              Planning context for September 12: the September 11{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              reports Alton down 0.1 foot, Mel Price up 0.1 foot, and St. Louis up 0.5 foot over 24 hours.
-              The September 10{" "}
-              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215034&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
-                USACE notice
+              reports Alton up 0.2 foot, Mel Price up 0.4 foot, and St. Louis up 0.5 foot over 24 hours.
+              The September 11{" "}
+              <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69847222" target="_blank" rel="noopener noreferrer">
+                Coast Guard notice
               </a>{" "}
-              says the Melvin Price auxiliary lock is closed through September 16 for overhead bulkhead-crane repairs.
-              Those reported details belong to their dated official sources; they are not new measurements from this morning.
+              identifies the Jefferson Reach, river miles 100-200, in Low Water Watch. Those reported details
+              belong to their dated official sources; they are not new measurements from this morning.
               River stages alone do not establish vessel access or a delivery window.
             </p>
             <p>
