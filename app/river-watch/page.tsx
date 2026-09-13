@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 13, 2026",
+    time: "6:32 AM CDT",
+    summary:
+      "The latest NWS summary, issued September 12, shows Alton steady at 19.2 feet, Mel Price up 0.4 foot to 3.5 feet, and St. Louis up 0.7 foot to 0.3 foot; no newer relevant USACE active notice was identified.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
     date: "September 12, 2026",
     time: "6:31 AM CDT",
     summary:
@@ -160,27 +168,27 @@ const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 12, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 11: Alton 19.2 feet (up 0.2), Mel Price Lock and Dam 3.1 feet (up 0.4), and St. Louis -0.4 feet (up 0.5). These are September 11 observations, not readings from this morning.",
+      "Reviewed September 13, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 12: Alton 19.2 feet (steady), Mel Price Lock and Dam 3.5 feet (up 0.4), and St. Louis 0.3 foot (up 0.7). These are September 12 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 12, 2026. Direct refresh was blocked by the source website, so the previously available September 2 weekly-report listing could not be refreshed and a newer posting cannot be ruled out.",
+      "Reviewed September 13, 2026. Direct refresh was blocked by the source website, so the previously available September 2 weekly-report listing could not be refreshed and a newer posting cannot be ruled out.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 12, 2026. Direct refresh was blocked by the source website, so the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi could not be refreshed and survey freshness cannot be confirmed today.",
+      "Reviewed September 13, 2026. Direct refresh was blocked by the source website, so the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi could not be refreshed and survey freshness cannot be confirmed today.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 12, 2026. The official St. Louis District active-notice feed returned seven notices; its newest relevant item remains the September 10 notice that the Melvin Price auxiliary lock is closed from September 8 through September 16 for overhead bulkhead-crane repairs.",
+      "Reviewed September 13, 2026. The official St. Louis District active-notice feed returned seven notices; its newest relevant item remains the September 10 notice that the Melvin Price auxiliary lock is closed from September 8 through September 16 for overhead bulkhead-crane repairs.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 12, 2026. A September 11 Upper Mississippi notice, SEC UMR BNM 0209-26, identifies the Jefferson Reach (river miles 100-200) in Low Water Watch. The notice itself controls.",
+      "Reviewed September 13, 2026. No newer Upper Mississippi notice was identified in the September 12-13 search; the September 11 notice, SEC UMR BNM 0209-26, remains the latest reviewed local item. The notice itself controls.",
   },
 ] as const;
 
@@ -236,9 +244,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 12, 2026 at 6:31 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 11. A newly issued Coast Guard notice identifies the Jefferson
-              Reach in Low Water Watch; USACE report and survey refresh limitations are noted below.
+              <strong>Morning check: September 13, 2026 at 6:32 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 12. No newer relevant USACE active notice was identified; USACE
+              report and survey refresh limitations are noted below.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -251,12 +259,12 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 12: the September 11{" "}
+              Planning context for September 13: the September 12{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              reports Alton up 0.2 foot, Mel Price up 0.4 foot, and St. Louis up 0.5 foot over 24 hours.
-              The September 11{" "}
+              reports Alton steady at 19.2 feet, Mel Price up 0.4 foot to 3.5 feet, and St. Louis up 0.7
+              foot to 0.3 foot over 24 hours. The September 11{" "}
               <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69847222" target="_blank" rel="noopener noreferrer">
                 Coast Guard notice
               </a>{" "}
