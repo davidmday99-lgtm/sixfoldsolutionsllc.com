@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 14, 2026",
+    time: "6:32 AM CDT",
+    summary:
+      "The September 13 NWS summary shows Alton up 0.5 foot to 19.7 feet, Mel Price up 1.1 feet to 4.6 feet, and St. Louis up 1.6 feet to 2.0 feet; the September 9 USACE weekly status report is now the newest listed report.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
     date: "September 13, 2026",
     time: "6:32 AM CDT",
     summary:
@@ -168,27 +176,27 @@ const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 13, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 12: Alton 19.2 feet (steady), Mel Price Lock and Dam 3.5 feet (up 0.4), and St. Louis 0.3 foot (up 0.7). These are September 12 observations, not readings from this morning.",
+      "Reviewed September 14, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 13: Alton 19.7 feet (up 0.5), Mel Price Lock and Dam 4.6 feet (up 1.1), and St. Louis 2.0 feet (up 1.6). These are September 13 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 13, 2026. Direct refresh was blocked by the source website, so the previously available September 2 weekly-report listing could not be refreshed and a newer posting cannot be ruled out.",
+      "Reviewed September 14, 2026. The official listing now shows its September 9 weekly channel-condition report as the newest posting. The report is dated information; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 13, 2026. Direct refresh was blocked by the source website, so the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi could not be refreshed and survey freshness cannot be confirmed today.",
+      "Reviewed September 14, 2026. Direct refresh was unavailable during this check, so the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi could not be refreshed and survey freshness cannot be confirmed today.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 13, 2026. The official St. Louis District active-notice feed returned seven notices; its newest relevant item remains the September 10 notice that the Melvin Price auxiliary lock is closed from September 8 through September 16 for overhead bulkhead-crane repairs.",
+      "Reviewed September 14, 2026. The active-notice feed could not be retrieved during this check, so no newer notice is represented here. The previously reviewed September 10 Melvin Price auxiliary-lock repair notice remains linked in the September 11 archive entry.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 13, 2026. No newer Upper Mississippi notice was identified in the September 12-13 search; the September 11 notice, SEC UMR BNM 0209-26, remains the latest reviewed local item. The notice itself controls.",
+      "Reviewed September 14, 2026. No newer Upper Mississippi notice was confirmed in this check; the September 11 notice, SEC UMR BNM 0209-26, remains the latest reviewed local item. The notice itself controls.",
   },
 ] as const;
 
@@ -244,9 +252,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 13, 2026 at 6:32 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 12. No newer relevant USACE active notice was identified; USACE
-              report and survey refresh limitations are noted below.
+              <strong>Morning check: September 14, 2026 at 6:32 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 13, and the September 9 USACE weekly report is now the newest
+              listed channel-condition report. Notice and survey refresh limitations are noted below.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -259,17 +267,17 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 13: the September 12{" "}
+              Planning context for September 14: the September 13{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              reports Alton steady at 19.2 feet, Mel Price up 0.4 foot to 3.5 feet, and St. Louis up 0.7
-              foot to 0.3 foot over 24 hours. The September 11{" "}
-              <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69847222" target="_blank" rel="noopener noreferrer">
-                Coast Guard notice
+              reports Alton up 0.5 foot to 19.7 feet, Mel Price up 1.1 feet to 4.6 feet, and St. Louis up
+              1.6 feet to 2.0 feet over 24 hours. The September 9{" "}
+              <a href="https://www.mvs.usace.army.mil/Portals/54/docs/navigation/status%20reports/2026/Channel%20Condition%20Status%2009%20Sep%202026%20-%20Legal%20Size.pdf" target="_blank" rel="noopener noreferrer">
+                USACE weekly status report
               </a>{" "}
-              identifies the Jefferson Reach, river miles 100-200, in Low Water Watch. Those reported details
-              belong to their dated official sources; they are not new measurements from this morning.
+              is the newest listed weekly posting. Those reported details belong to their dated official sources;
+              they are not new measurements from this morning.
               River stages alone do not establish vessel access or a delivery window.
             </p>
             <p>
