@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 15, 2026",
+    time: "7:31 AM CDT",
+    summary:
+      "The latest NWS summary, issued September 14, shows Alton down 0.7 foot to 19.0 feet, Mel Price up 0.7 foot to 5.3 feet, and St. Louis up 1.7 feet to 3.7 feet; no newer relevant active USACE notice or Coast Guard Upper Mississippi notice was identified.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
     date: "September 14, 2026",
     time: "6:32 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "September 1, 2026",
-    time: "8:19 AM CDT",
-    summary:
-      "A Coast Guard Upper Mississippi notice dated August 30 reported dredging near mile 172; the latest NWS summary then available showed Alton at 19.4 feet and Mel Price at 4.6 feet.",
-    source: "Coast Guard Broadcast Notices to Mariners",
-    href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 14, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 13: Alton 19.7 feet (up 0.5), Mel Price Lock and Dam 4.6 feet (up 1.1), and St. Louis 2.0 feet (up 1.6). These are September 13 observations, not readings from this morning.",
+      "Reviewed September 15, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 14: Alton 19.0 feet (down 0.7), Mel Price Lock and Dam 5.3 feet (up 0.7), and St. Louis 3.7 feet (up 1.7). These are September 14 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 14, 2026. The official listing now shows its September 9 weekly channel-condition report as the newest posting. The report is dated information; the report itself controls.",
+      "Reviewed September 15, 2026. Direct refresh was unavailable; the previously confirmed September 9 weekly channel-condition report remains the newest listed posting. The report is dated information; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 14, 2026. Direct refresh was unavailable during this check, so the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi could not be refreshed and survey freshness cannot be confirmed today.",
+      "Reviewed September 15, 2026. Direct refresh was unavailable during this check, so the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi could not be refreshed and survey freshness cannot be confirmed today.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 14, 2026. The active-notice feed could not be retrieved during this check, so no newer notice is represented here. The previously reviewed September 10 Melvin Price auxiliary-lock repair notice remains linked in the September 11 archive entry.",
+      "Reviewed September 15, 2026. The active-notice feed returned seven notices; no newer relevant notice was identified. The September 10 Melvin Price auxiliary-lock repair notice remains linked in the September 11 archive entry.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 14, 2026. No newer Upper Mississippi notice was confirmed in this check; the September 11 notice, SEC UMR BNM 0209-26, remains the latest reviewed local item. The notice itself controls.",
+      "Reviewed September 15, 2026. The District 8 Upper Mississippi search returned no notices dated September 14-15; the September 11 notice, SEC UMR BNM 0209-26, remains the latest reviewed local item. The notice itself controls.",
   },
 ] as const;
 
@@ -252,9 +252,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 14, 2026 at 6:32 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 13, and the September 9 USACE weekly report is now the newest
-              listed channel-condition report. Notice and survey refresh limitations are noted below.
+              <strong>Morning check: September 15, 2026 at 7:31 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 14. No newer relevant active USACE notice or Coast Guard Upper
+              Mississippi notice was identified; weekly-report and survey refresh limitations are noted below.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -267,12 +267,12 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 14: the September 13{" "}
+              Planning context for September 15: the September 14{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              reports Alton up 0.5 foot to 19.7 feet, Mel Price up 1.1 feet to 4.6 feet, and St. Louis up
-              1.6 feet to 2.0 feet over 24 hours. The September 9{" "}
+              reports Alton down 0.7 foot to 19.0 feet, Mel Price up 0.7 foot to 5.3 feet, and St. Louis up
+              1.7 feet to 3.7 feet over 24 hours. The previously confirmed September 9{" "}
               <a href="https://www.mvs.usace.army.mil/Portals/54/docs/navigation/status%20reports/2026/Channel%20Condition%20Status%2009%20Sep%202026%20-%20Legal%20Size.pdf" target="_blank" rel="noopener noreferrer">
                 USACE weekly status report
               </a>{" "}
