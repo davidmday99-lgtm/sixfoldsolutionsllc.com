@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 16, 2026",
+    time: "6:34 AM CDT",
+    summary:
+      "A September 15 Coast Guard Upper Mississippi notice lists the Washington and Jefferson reaches in Low Water Action; the latest NWS summary, issued September 15, shows Alton up 0.4 foot to 19.4 feet, Mel Price down 1.3 feet to 4.0 feet, and St. Louis down 2.3 feet to 1.4 feet.",
+    source: "Coast Guard Broadcast Notice to Mariners",
+    href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69915939",
+  },
+  {
     date: "September 15, 2026",
     time: "7:31 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "USACE E-Hydro Survey Map",
     href: "https://www.arcgis.com/apps/dashboards/4b8f2ba307684cf597617bf1b6d2f85d",
   },
-  {
-    date: "September 2, 2026",
-    time: "6:34 AM CDT",
-    summary:
-      "The September 1 NWS river summary showed Alton at 19.7 feet and Mel Price at 5.0 feet; other reviewed district sources remained on earlier postings.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 15, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 14: Alton 19.0 feet (down 0.7), Mel Price Lock and Dam 5.3 feet (up 0.7), and St. Louis 3.7 feet (up 1.7). These are September 14 observations, not readings from this morning.",
+      "Reviewed September 16, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 15: Alton 19.4 feet (up 0.4), Mel Price Lock and Dam 4.0 feet (down 1.3), and St. Louis 1.4 feet (down 2.3). These are September 15 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 15, 2026. Direct refresh was unavailable; the previously confirmed September 9 weekly channel-condition report remains the newest listed posting. The report is dated information; the report itself controls.",
+      "Reviewed September 16, 2026. The September 9 weekly channel-condition report remains the newest listed posting. The report is dated information; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 15, 2026. Direct refresh was unavailable during this check, so the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi could not be refreshed and survey freshness cannot be confirmed today.",
+      "Reviewed September 16, 2026. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 15, 2026. The active-notice feed returned seven notices; no newer relevant notice was identified. The September 10 Melvin Price auxiliary-lock repair notice remains linked in the September 11 archive entry.",
+      "Reviewed September 16, 2026. The active-notice feed returned eight notices; the new September 15 entry concerns the Kaskaskia River, and no newer relevant Alton or Melvin Price notice was identified. The September 10 Melvin Price auxiliary-lock repair notice remains linked in the September 11 archive entry.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 15, 2026. The District 8 Upper Mississippi search returned no notices dated September 14-15; the September 11 notice, SEC UMR BNM 0209-26, remains the latest reviewed local item. The notice itself controls.",
+      "Reviewed September 16, 2026. A September 15 notice, SEC UMR BNM 0210-26, lists the Washington and Jefferson reaches in Low Water Action. The notice itself controls.",
   },
 ] as const;
 
@@ -252,9 +252,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 15, 2026 at 7:31 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 14. No newer relevant active USACE notice or Coast Guard Upper
-              Mississippi notice was identified; weekly-report and survey refresh limitations are noted below.
+              <strong>Morning check: September 16, 2026 at 6:34 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 15. A new Coast Guard Upper Mississippi notice lists the Washington
+              and Jefferson reaches in Low Water Action; the dated official notice controls.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -267,12 +267,16 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 15: the September 14{" "}
+              Planning context for September 16: the September 15{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              reports Alton down 0.7 foot to 19.0 feet, Mel Price up 0.7 foot to 5.3 feet, and St. Louis up
-              1.7 feet to 3.7 feet over 24 hours. The previously confirmed September 9{" "}
+              reports Alton up 0.4 foot to 19.4 feet, Mel Price down 1.3 feet to 4.0 feet, and St. Louis down
+              2.3 feet to 1.4 feet over 24 hours. A September 15{" "}
+              <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69915939" target="_blank" rel="noopener noreferrer">
+                Coast Guard notice
+              </a>{" "}
+              lists the Washington and Jefferson reaches in Low Water Action. The September 9{" "}
               <a href="https://www.mvs.usace.army.mil/Portals/54/docs/navigation/status%20reports/2026/Channel%20Condition%20Status%2009%20Sep%202026%20-%20Legal%20Size.pdf" target="_blank" rel="noopener noreferrer">
                 USACE weekly status report
               </a>{" "}
