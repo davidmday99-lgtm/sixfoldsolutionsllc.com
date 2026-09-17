@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 17, 2026",
+    time: "7:52 AM CDT",
+    summary:
+      "USACE notice 215063 states that Melvin Price Locks and Dam's 1,200-foot main lock is scheduled to close daily from 7:00 AM to 5:00 PM September 17-18 for repair work; the September 16 NWS summary shows Alton up 0.2 foot to 19.6 feet, Mel Price down 0.5 foot to 3.5 feet, and St. Louis down 0.9 foot to 0.6 foot.",
+    source: "USACE Notice to Navigation Interests",
+    href: "https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215063&in_title_formatting=UB",
+  },
+  {
     date: "September 16, 2026",
     time: "6:34 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "USACE St. Louis Weekly Status Report",
     href: "https://www.mvs.usace.army.mil/Missions/Navigation/Status-Reports/",
   },
-  {
-    date: "September 3, 2026",
-    time: "8:29 AM CDT",
-    summary:
-      "USACE survey pages showed September 1 field work uploaded September 2 in Middle Mississippi reaches and the Melvin Price pool; no newer NWS summary or weekly report was visible.",
-    source: "USACE E-Hydro Survey Map",
-    href: "https://www.arcgis.com/apps/dashboards/4b8f2ba307684cf597617bf1b6d2f85d",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 16, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 15: Alton 19.4 feet (up 0.4), Mel Price Lock and Dam 4.0 feet (down 1.3), and St. Louis 1.4 feet (down 2.3). These are September 15 observations, not readings from this morning.",
+      "Reviewed September 17, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 16: Alton 19.6 feet (up 0.2), Mel Price Lock and Dam 3.5 feet (down 0.5), and St. Louis 0.6 foot (down 0.9). These are September 16 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 16, 2026. The September 9 weekly channel-condition report remains the newest listed posting. The report is dated information; the report itself controls.",
+      "Reviewed September 17, 2026. The September 9 weekly channel-condition report remains the newest listed posting. The report is dated information; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 16, 2026. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
+      "Reviewed September 17, 2026. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 16, 2026. The active-notice feed returned eight notices; the new September 15 entry concerns the Kaskaskia River, and no newer relevant Alton or Melvin Price notice was identified. The September 10 Melvin Price auxiliary-lock repair notice remains linked in the September 11 archive entry.",
+      "Reviewed September 17, 2026. The active-notice feed returned ten notices, including notice 215063 for Melvin Price Locks and Dam. The notice states that the 1,200-foot main lock is scheduled to close daily September 17-18 for repair work; the official notice controls.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 16, 2026. A September 15 notice, SEC UMR BNM 0210-26, lists the Washington and Jefferson reaches in Low Water Action. The notice itself controls.",
+      "Reviewed September 17, 2026. The September 15 notice SEC UMR BNM 0210-26 remains the newest Upper Mississippi item identified in the reviewed results; it lists the Washington and Jefferson reaches in Low Water Action. The notice itself controls.",
   },
 ] as const;
 
@@ -252,9 +252,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 16, 2026 at 6:34 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 15. A new Coast Guard Upper Mississippi notice lists the Washington
-              and Jefferson reaches in Low Water Action; the dated official notice controls.
+              <strong>Morning check: September 17, 2026 at 7:52 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 16. USACE notice 215063 identifies scheduled September 17-18 repair
+              work at Melvin Price Locks and Dam; the dated official notice controls.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -267,16 +267,17 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 16: the September 15{" "}
+              Planning context for September 17: the September 16{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              reports Alton up 0.4 foot to 19.4 feet, Mel Price down 1.3 feet to 4.0 feet, and St. Louis down
-              2.3 feet to 1.4 feet over 24 hours. A September 15{" "}
-              <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69915939" target="_blank" rel="noopener noreferrer">
-                Coast Guard notice
+              reports Alton up 0.2 foot to 19.6 feet, Mel Price down 0.5 foot to 3.5 feet, and St. Louis down
+              0.9 foot to 0.6 foot over 24 hours. A September 17{" "}
+              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215063&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
+                USACE notice
               </a>{" "}
-              lists the Washington and Jefferson reaches in Low Water Action. The September 9{" "}
+              says the Melvin Price 1,200-foot main lock is scheduled to close daily from 7:00 AM to 5:00 PM
+              September 17-18 for repair work. The September 9{" "}
               <a href="https://www.mvs.usace.army.mil/Portals/54/docs/navigation/status%20reports/2026/Channel%20Condition%20Status%2009%20Sep%202026%20-%20Legal%20Size.pdf" target="_blank" rel="noopener noreferrer">
                 USACE weekly status report
               </a>{" "}
