@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-a-low-water-action-notice-means-for-a-shoreside-plan",
+    ariaLabel: "Read What A Low Water Action Notice Means For A Shoreside Plan",
+    dateTime: "2026-09-17",
+    dateLabel: "September 17, 2026",
+    category: "River Conditions",
+    readTime: "4 minute read",
+    title: "What A Low Water Action Notice Means For A Shoreside Plan",
+    description: "How to use a current Coast Guard Low Water Action notice as traceable planning context without turning it into a vessel schedule.",
+  },
+  {
     href: "/blog/what-the-ihnc-lock-decision-means-for-river-logistics",
     ariaLabel: "Read What the IHNC Lock Decision Means for River Logistics",
     dateTime: "2026-09-10",
