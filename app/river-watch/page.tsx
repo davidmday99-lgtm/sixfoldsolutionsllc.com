@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 18, 2026",
+    time: "8:22 AM CDT",
+    summary:
+      "The September 17 NWS summary shows Alton down 0.2 foot to 19.3 feet, Mel Price up 0.7 foot to 4.2 feet, and St. Louis up 1.1 feet to 1.6 feet; a September 17 USACE update cancels the previously scheduled September 18 ten-hour main-lock closure at Melvin Price and notes possible intermittent repair closures during September 21-25.",
+    source: "USACE Notice to Navigation Interests",
+    href: "https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215071&in_title_formatting=UB",
+  },
+  {
     date: "September 17, 2026",
     time: "7:52 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "September 4, 2026",
-    time: "7:57 AM CDT",
-    summary:
-      "The NWS summary and the St. Louis weekly status-report listing both advanced, while survey pages continued to show the September 1 and 2 uploads already identified.",
-    source: "USACE St. Louis Weekly Status Report",
-    href: "https://www.mvs.usace.army.mil/Missions/Navigation/Status-Reports/",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 17, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 16: Alton 19.6 feet (up 0.2), Mel Price Lock and Dam 3.5 feet (down 0.5), and St. Louis 0.6 foot (down 0.9). These are September 16 observations, not readings from this morning.",
+      "Reviewed September 18, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 17: Alton 19.3 feet (down 0.2), Mel Price Lock and Dam 4.2 feet (up 0.7), and St. Louis 1.6 feet (up 1.1). These are September 17 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 17, 2026. The September 9 weekly channel-condition report remains the newest listed posting. The report is dated information; the report itself controls.",
+      "Reviewed September 18, 2026. No newer weekly channel-condition report was confirmed during this check; the September 9 report remains dated planning context. The report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 17, 2026. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
+      "Reviewed September 18, 2026. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 17, 2026. The active-notice feed returned ten notices, including notice 215063 for Melvin Price Locks and Dam. The notice states that the 1,200-foot main lock is scheduled to close daily September 17-18 for repair work; the official notice controls.",
+      "Reviewed September 18, 2026. The active-notice feed returned twelve notices, including update 215063-1 for Melvin Price Locks and Dam. The update cancels the September 18 ten-hour main-lock closure and notes possible intermittent closures September 21-25 for remaining repairs; the official notice controls.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 17, 2026. The September 15 notice SEC UMR BNM 0210-26 remains the newest Upper Mississippi item identified in the reviewed results; it lists the Washington and Jefferson reaches in Low Water Action. The notice itself controls.",
+      "Reviewed September 18, 2026. The reviewed September 16-18 results did not identify a newer Upper Mississippi condition notice; the September 15 SEC UMR BNM 0210-26 remains the newest such item previously identified. The notice itself controls.",
   },
 ] as const;
 
@@ -252,9 +252,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 17, 2026 at 7:52 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 16. USACE notice 215063 identifies scheduled September 17-18 repair
-              work at Melvin Price Locks and Dam; the dated official notice controls.
+              <strong>Morning check: September 18, 2026 at 8:22 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 17. USACE update 215063-1 cancels the previously scheduled September 18
+              ten-hour main-lock closure at Melvin Price Locks and Dam; the dated official notice controls.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -267,17 +267,17 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 17: the September 16{" "}
+              Planning context for September 18: the September 17{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              reports Alton up 0.2 foot to 19.6 feet, Mel Price down 0.5 foot to 3.5 feet, and St. Louis down
-              0.9 foot to 0.6 foot over 24 hours. A September 17{" "}
-              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215063&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
+              reports Alton down 0.2 foot to 19.3 feet, Mel Price up 0.7 foot to 4.2 feet, and St. Louis up
+              1.1 feet to 1.6 feet over 24 hours. A September 17{" "}
+              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215071&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
                 USACE notice
               </a>{" "}
-              says the Melvin Price 1,200-foot main lock is scheduled to close daily from 7:00 AM to 5:00 PM
-              September 17-18 for repair work. The September 9{" "}
+              cancels the September 18 ten-hour main-lock closure and notes possible intermittent closures September
+              21-25 for remaining repairs. The September 9{" "}
               <a href="https://www.mvs.usace.army.mil/Portals/54/docs/navigation/status%20reports/2026/Channel%20Condition%20Status%2009%20Sep%202026%20-%20Legal%20Size.pdf" target="_blank" rel="noopener noreferrer">
                 USACE weekly status report
               </a>{" "}
