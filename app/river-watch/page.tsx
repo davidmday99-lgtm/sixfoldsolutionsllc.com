@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 20, 2026",
+    time: "6:34 AM CDT",
+    summary:
+      "The latest NWS summary, issued September 18, shows Alton up 0.1 foot to 19.4 feet, Mel Price up 0.9 foot to 5.2 feet, and St. Louis up 1.3 feet to 3.0 feet; a September 18 Coast Guard update identifies mechanical dredging at Upper Mississippi River mile 125.7, and the official notice controls.",
+    source: "Coast Guard Broadcast Notice to Mariners",
+    href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69959027",
+  },
+  {
     date: "September 18, 2026",
     time: "8:22 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "September 5, 2026",
-    time: "6:32 AM CDT",
-    summary:
-      "The NWS summary advanced to its September 4 issuance, showing Alton at 19.4 feet and Mel Price at 4.3 feet; other reviewed official sources did not show a material update.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 18, 2026. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 17: Alton 19.3 feet (down 0.2), Mel Price Lock and Dam 4.2 feet (up 0.7), and St. Louis 1.6 feet (up 1.1). These are September 17 observations, not readings from this morning.",
+      "Reviewed September 20, 2026 at 6:34 AM CDT. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 18: Alton 19.4 feet (up 0.1), Mel Price Lock and Dam 5.2 feet (up 0.9), and St. Louis 3.0 feet (up 1.3). These are September 18 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 18, 2026. No newer weekly channel-condition report was confirmed during this check; the September 9 report remains dated planning context. The report itself controls.",
+      "Reviewed September 20, 2026 at 6:34 AM CDT. No newer weekly channel-condition report was confirmed during this check; the September 9 report remains dated planning context. The report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 18, 2026. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
+      "Reviewed September 20, 2026 at 6:34 AM CDT. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 18, 2026. The active-notice feed returned twelve notices, including update 215063-1 for Melvin Price Locks and Dam. The update cancels the September 18 ten-hour main-lock closure and notes possible intermittent closures September 21-25 for remaining repairs; the official notice controls.",
+      "Reviewed September 20, 2026 at 6:34 AM CDT. The active-notice feed returned twelve notices. A September 18 Lock and Dam 25 update adds a September 24 scheduled closure to its construction notice; the official notice controls.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 18, 2026. The reviewed September 16-18 results did not identify a newer Upper Mississippi condition notice; the September 15 SEC UMR BNM 0210-26 remains the newest such item previously identified. The notice itself controls.",
+      "Reviewed September 20, 2026 at 6:34 AM CDT. The reviewed September 18-20 results included SEC UMR BNM 0191-26 UPDATE-2, which identifies mechanical dredging at Upper Mississippi River mile 125.7. A September 20 cancellation entry carried no location detail; the notices themselves control.",
   },
 ] as const;
 
