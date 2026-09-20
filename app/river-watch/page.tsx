@@ -252,9 +252,10 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 18, 2026 at 8:22 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 17. USACE update 215063-1 cancels the previously scheduled September 18
-              ten-hour main-lock closure at Melvin Price Locks and Dam; the dated official notice controls.
+              <strong>Morning check: September 20, 2026 at 6:34 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 18. A Coast Guard update identifies mechanical dredging at Upper Mississippi
+              River mile 125.7, and a USACE Lock and Dam 25 update adds a September 24 scheduled closure; the dated
+              official notices control.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -267,22 +268,21 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 18: the September 17{" "}
+              Planning context for September 20: the September 18{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              reports Alton down 0.2 foot to 19.3 feet, Mel Price up 0.7 foot to 4.2 feet, and St. Louis up
-              1.1 feet to 1.6 feet over 24 hours. A September 17{" "}
-              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215071&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
+              reports Alton up 0.1 foot to 19.4 feet, Mel Price up 0.9 foot to 5.2 feet, and St. Louis up
+              1.3 feet to 3.0 feet over 24 hours. A September 18{" "}
+              <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69959027" target="_blank" rel="noopener noreferrer">
+                Coast Guard update
+              </a>{" "}
+              identifies mechanical dredging at Upper Mississippi River mile 125.7. A September 18{" "}
+              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215074&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
                 USACE notice
               </a>{" "}
-              cancels the September 18 ten-hour main-lock closure and notes possible intermittent closures September
-              21-25 for remaining repairs. The September 9{" "}
-              <a href="https://www.mvs.usace.army.mil/Portals/54/docs/navigation/status%20reports/2026/Channel%20Condition%20Status%2009%20Sep%202026%20-%20Legal%20Size.pdf" target="_blank" rel="noopener noreferrer">
-                USACE weekly status report
-              </a>{" "}
-              is the newest listed weekly posting. Those reported details belong to their dated official sources;
-              they are not new measurements from this morning.
+              adds a September 24 scheduled Lock and Dam 25 closure to its construction notice. Those reported details
+              belong to their dated official sources; they are not new measurements from this morning.
               River stages alone do not establish vessel access or a delivery window.
             </p>
             <p>
