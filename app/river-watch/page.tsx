@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 21, 2026",
+    time: "6:33 AM CDT",
+    summary:
+      "The latest NWS River Summary remains the September 18 issuance: Alton 19.4 feet (up 0.1), Mel Price 5.2 feet (up 0.9), and St. Louis 3.0 feet (up 1.3). The active USACE St. Louis notice feed includes a September 17 Dredge Goetz notice scheduling work at Upper Mississippi River mile 194.1 beginning September 23; the official notice controls.",
+    source: "USACE Notice to Navigation Interests",
+    href: "https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215066&in_title_formatting=UB",
+  },
+  {
     date: "September 20, 2026",
     time: "6:34 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "September 6, 2026",
-    time: "6:32 AM CDT",
-    summary:
-      "The NWS summary advanced to its September 5 issuance, showing Alton at 19.3 feet and Mel Price at 3.2 feet; no material new notice or survey item was identified.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 20, 2026 at 6:34 AM CDT. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 18: Alton 19.4 feet (up 0.1), Mel Price Lock and Dam 5.2 feet (up 0.9), and St. Louis 3.0 feet (up 1.3). These are September 18 observations, not readings from this morning.",
+      "Reviewed September 21, 2026 at 6:33 AM CDT. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 18: Alton 19.4 feet (up 0.1), Mel Price Lock and Dam 5.2 feet (up 0.9), and St. Louis 3.0 feet (up 1.3). These are September 18 observations, not readings from this morning.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 20, 2026 at 6:34 AM CDT. No newer weekly channel-condition report was confirmed during this check; the September 9 report remains dated planning context. The report itself controls.",
+      "Reviewed September 21, 2026 at 6:33 AM CDT. No newer weekly channel-condition report was confirmed during this check; the September 9 report remains dated planning context. The report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 20, 2026 at 6:34 AM CDT. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
+      "Reviewed September 21, 2026 at 6:33 AM CDT. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 20, 2026 at 6:34 AM CDT. The active-notice feed returned twelve notices. A September 18 Lock and Dam 25 update adds a September 24 scheduled closure to its construction notice; the official notice controls.",
+      "Reviewed September 21, 2026 at 6:33 AM CDT. The active-notice feed returned twelve notices. It includes a September 17 Dredge Goetz notice scheduling work at Upper Mississippi River mile 194.1 beginning September 23; the official notice controls.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 20, 2026 at 6:34 AM CDT. The reviewed September 18-20 results included SEC UMR BNM 0191-26 UPDATE-2, which identifies mechanical dredging at Upper Mississippi River mile 125.7. A September 20 cancellation entry carried no location detail; the notices themselves control.",
+      "Reviewed September 21, 2026 at 6:33 AM CDT. The September 20-21 results contained two cancellation entries, both without location detail. No material new local condition notice was identified; the notices themselves control.",
   },
 ] as const;
 
@@ -252,10 +252,10 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 20, 2026 at 6:34 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 18. A Coast Guard update identifies mechanical dredging at Upper Mississippi
-              River mile 125.7, and a USACE Lock and Dam 25 update adds a September 24 scheduled closure; the dated
-              official notices control.
+              <strong>Morning check: September 21, 2026 at 6:33 AM CDT.</strong> The latest NWS summary
+              retrieved is dated September 18. The active USACE St. Louis notice feed includes a September 17 Dredge
+              Goetz notice scheduling work at Upper Mississippi River mile 194.1 beginning September 23; the dated
+              official notice controls.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -268,7 +268,7 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 20: the September 18{" "}
+              Planning context for September 21: the September 18{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
@@ -277,11 +277,11 @@ export default function RiverWatchPage() {
               <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69959027" target="_blank" rel="noopener noreferrer">
                 Coast Guard update
               </a>{" "}
-              identifies mechanical dredging at Upper Mississippi River mile 125.7. A September 18{" "}
-              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215074&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
+              identifies mechanical dredging at Upper Mississippi River mile 125.7. A September 17{" "}
+              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215066&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
                 USACE notice
               </a>{" "}
-              adds a September 24 scheduled Lock and Dam 25 closure to its construction notice. Those reported details
+              schedules Dredge Goetz work at Upper Mississippi River mile 194.1 beginning September 23. Those reported details
               belong to their dated official sources; they are not new measurements from this morning.
               River stages alone do not establish vessel access or a delivery window.
             </p>
