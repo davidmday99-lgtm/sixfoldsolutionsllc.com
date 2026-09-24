@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-dredge-potters-2026-return-means-for-a-shoreside-plan",
+    ariaLabel: "Read What Dredge Potter’s 2026 Return Means For A Shoreside Plan",
+    dateTime: "2026-09-24",
+    dateLabel: "September 24, 2026",
+    category: "River Operations",
+    readTime: "4 minute read",
+    title: "What Dredge Potter’s 2026 Return Means For A Shoreside Plan",
+    description: "How a current USACE dredging update can sharpen a Mississippi River handoff conversation without becoming a vessel schedule.",
+  },
+  {
     href: "/blog/what-a-low-water-action-notice-means-for-a-shoreside-plan",
     ariaLabel: "Read What A Low Water Action Notice Means For A Shoreside Plan",
     dateTime: "2026-09-17",

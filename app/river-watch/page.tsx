@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 24, 2026",
+    time: "9:22 AM CDT",
+    summary:
+      "The September 24 NWS River Summary reports Alton 15.4 feet (up 0.8), Mel Price 12.2 feet (up 0.2), and St. Louis 14.5 feet (down 0.1). A September 22 Coast Guard notice identifies Dredge Goetz operations at Upper Mississippi River mile 194 beginning September 23; the official notice controls.",
+    source: "Coast Guard Broadcast Notice to Mariners",
+    href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69989962",
+  },
+  {
     date: "September 22, 2026",
     time: "6:32 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "Coast Guard notice and NWS River Summary",
     href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69801581",
   },
-  {
-    date: "September 8, 2026",
-    time: "6:35 AM CDT",
-    summary:
-      "A new Coast Guard notice placed the St. Louis reach in Low Water Watch; the latest NWS summary showed lower 24-hour stages at Melvin Price and St. Louis.",
-    source: "Coast Guard notice",
-    href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69781616",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 22, 2026 at 6:32 AM CDT. The latest summary retrieved directly from NWS was issued at 9:00 AM CDT September 21: Alton 16.8 feet (down 1.3), Mel Price Lock and Dam 9.2 feet (up 1.5), and St. Louis 9.7 feet (up 2.6). These are September 21 observations, not readings from this morning.",
+      "Reviewed September 24, 2026 at 9:22 AM CDT. The NWS summary issued at 9:00 AM CDT September 24 reports Alton 15.4 feet (up 0.8), Mel Price Lock and Dam 12.2 feet (up 0.2), and St. Louis 14.5 feet (down 0.1).",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 22, 2026 at 6:32 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. The September 9 report remains dated planning context; the report itself controls.",
+      "Reviewed September 24, 2026 at 9:22 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. The September 9 report remains dated planning context; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 22, 2026 at 6:32 AM CDT. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
+      "Reviewed September 24, 2026 at 9:22 AM CDT. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 22, 2026 at 6:32 AM CDT. The active-notice feed returned twelve notices. A September 21 update to the Lock and Dam 25 construction notice adds a September 24 closure to its listed schedule; the official notice controls.",
+      "Reviewed September 24, 2026 at 9:22 AM CDT. The active-notice feed returned twelve notices. No newer relevant USACE notice was identified beyond the September 21 Lock and Dam 25 construction-notice update; the official notices control.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 22, 2026 at 6:32 AM CDT. The September 20-22 results contained two cancellation entries. No material new local condition notice was identified beyond the separate USACE Lock and Dam 25 update; the notices themselves control.",
+      "Reviewed September 24, 2026 at 9:22 AM CDT. The September 22-24 results include a September 22 notice identifying Dredge Goetz operations at Upper Mississippi River mile 194 beginning September 23. Other results concern mile 693; the official notices control.",
   },
 ] as const;
 
@@ -252,9 +252,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 22, 2026 at 6:32 AM CDT.</strong> The latest NWS summary
-              retrieved is dated September 21. A September 21 USACE update adds a September 24 Lock and Dam 25
-              closure to its listed construction schedule; the dated official notice controls.
+              <strong>Morning check: September 24, 2026 at 9:22 AM CDT.</strong> The latest NWS summary
+              was issued at 9:00 AM CDT today. A September 22 Coast Guard notice identifies Dredge Goetz
+              operations at Upper Mississippi River mile 194 beginning September 23; the official notice controls.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -267,19 +267,18 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 22: the September 21{" "}
+              Planning context for September 24: the September 24{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              reports Alton down 1.3 feet to 16.8 feet, Mel Price up 1.5 feet to 9.2 feet, and St. Louis up
-              2.6 feet to 9.7 feet over 24 hours. The Coast Guard results reviewed contained two cancellation
-              entries. A September 21{" "}
-              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215077&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
-                USACE update
+              reports Alton up 0.8 foot to 15.4 feet, Mel Price up 0.2 foot to 12.2 feet, and St. Louis down
+              0.1 foot to 14.5 feet over 24 hours. A September 22{" "}
+              <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69989962" target="_blank" rel="noopener noreferrer">
+                Coast Guard notice
               </a>{" "}
-              adds a September 24 Lock and Dam 25 closure to its existing construction notice. Those reported
-              details belong to their dated official sources; they are not new measurements from this morning.
-              River stages alone do not establish vessel access or a delivery window.
+              identifies Dredge Goetz operations at Upper Mississippi River mile 194 beginning September 23.
+              Those reported details belong to their official sources. River stages alone do not establish vessel
+              access or a delivery window.
             </p>
             <p>
               This page receives a dated morning check every day. If no material official update is available,
