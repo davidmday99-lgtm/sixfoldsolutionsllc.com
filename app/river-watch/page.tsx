@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 26, 2026",
+    time: "6:31 AM CDT",
+    summary:
+      "The September 25 NWS River Summary reports Alton 14.8 feet (down 0.6), Mel Price 12.7 feet (up 0.5), and St. Louis 15.2 feet (up 0.8). No newer local USACE or Coast Guard condition item was confirmed during this morning review; official sources control.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
     date: "September 25, 2026",
     time: "6:33 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "USACE Notice to Navigation Interests",
     href: "https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215034&in_title_formatting=UB",
   },
-  {
-    date: "September 10, 2026",
-    time: "6:33 AM CDT",
-    summary:
-      "The latest NWS summary available at the check showed lower stages at Melvin Price and St. Louis; no new nearby notice was identified.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 25, 2026 at 6:33 AM CDT. Before today's next scheduled summary, the latest NWS issuance remains September 24 at 9:00 AM CDT: Alton 15.4 feet (up 0.8), Mel Price Lock and Dam 12.2 feet (up 0.2), and St. Louis 14.5 feet (down 0.1).",
+      "Reviewed September 26, 2026 at 6:31 AM CDT. The latest issuance, September 25 at 9:00 AM CDT, reports Alton 14.8 feet (down 0.6), Mel Price Lock and Dam 12.7 feet (up 0.5), and St. Louis 15.2 feet (up 0.8).",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 25, 2026 at 6:33 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. The September 9 report remains dated planning context; the report itself controls.",
+      "Reviewed September 26, 2026 at 6:31 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. Previously published reports remain dated planning context; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 25, 2026 at 6:33 AM CDT. No newer local survey posting was confirmed during this check; the previously available September 1-2 uploads for Melvin Price Pool and the Middle Mississippi remain dated context, not a current condition.",
+      "Reviewed September 26, 2026 at 6:31 AM CDT. The official survey listing shows dated Middle Mississippi uploads through September 14 and Melvin Price Pool uploads through September 1; no newer local posting was confirmed during this check. Surveys are dated context, not current conditions.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 25, 2026 at 6:33 AM CDT. The active-notice feed returned eleven notices. A September 24 Lock and Dam 25 construction update adds September 29 and October 1 closure dates; the official notice controls.",
+      "Reviewed September 26, 2026 at 6:31 AM CDT. No newer local condition item was confirmed during this check. The September 24 Lock and Dam 25 construction update remains dated context; the official notice controls.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 25, 2026 at 6:33 AM CDT. September 24 Upper Mississippi results include a shoaling report near river miles 261-262 and other notices outside the local reach. The official notices control.",
+      "Reviewed September 26, 2026 at 6:31 AM CDT. No newer local condition item was confirmed during this check. The official notices control.",
   },
 ] as const;
 
@@ -252,9 +252,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 25, 2026 at 6:33 AM CDT.</strong> Before today's next NWS
-              issuance, the latest published summary remains September 24. A September 24 USACE update adds
-              September 29 and October 1 Lock and Dam 25 construction-closure dates; the official notice controls.
+              <strong>Morning check: September 26, 2026 at 6:31 AM CDT.</strong> The latest NWS issuance is
+              September 25. No newer local USACE or Coast Guard condition item was confirmed during this review;
+              official sources control.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -267,12 +267,12 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 25: the latest published{" "}
+              Planning context for September 26: the latest published{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              issued September 24, reports Alton up 0.8 foot to 15.4 feet, Mel Price up 0.2 foot to 12.2 feet,
-              and St. Louis down 0.1 foot to 14.5 feet over 24 hours. A September 24{" "}
+              issued September 25, reports Alton down 0.6 foot to 14.8 feet, Mel Price up 0.5 foot to 12.7 feet,
+              and St. Louis up 0.8 foot to 15.2 feet over 24 hours. The dated September 24{" "}
               <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215092&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
                 USACE notice
               </a>{" "}
