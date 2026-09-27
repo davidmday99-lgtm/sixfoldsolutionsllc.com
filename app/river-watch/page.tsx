@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 27, 2026",
+    time: "6:33 AM CDT",
+    summary:
+      "The September 26 NWS River Summary reports Alton 14.5 feet (down 0.3), Mel Price 13.2 feet (up 0.5), and St. Louis 15.9 feet (up 0.7). A September 25 USACE revision schedules Dredge Goetz work at the Upper Chain of Rocks Canal Entrance, mile 194.1, beginning September 27; the official notice controls.",
+    source: "USACE Notice to Navigation Interests",
+    href: "https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215102&in_title_formatting=UB",
+  },
+  {
     date: "September 26, 2026",
     time: "6:31 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "Coast Guard Broadcast Notice to Mariners",
     href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=69847222",
   },
-  {
-    date: "September 11, 2026",
-    time: "6:33 AM CDT",
-    summary:
-      "A newly issued USACE notice says the Melvin Price auxiliary lock is closed for overhead bulkhead-crane repairs through September 16; the latest NWS summary shows Alton down 0.1 foot and Mel Price up 0.1 foot over 24 hours.",
-    source: "USACE Notice to Navigation Interests",
-    href: "https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215034&in_title_formatting=UB",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 26, 2026 at 6:31 AM CDT. The latest issuance, September 25 at 9:00 AM CDT, reports Alton 14.8 feet (down 0.6), Mel Price Lock and Dam 12.7 feet (up 0.5), and St. Louis 15.2 feet (up 0.8).",
+      "Reviewed September 27, 2026 at 6:33 AM CDT. The latest issuance, September 26 at 9:00 AM CDT, reports Alton 14.5 feet (down 0.3), Mel Price Lock and Dam 13.2 feet (up 0.5), and St. Louis 15.9 feet (up 0.7).",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 26, 2026 at 6:31 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. Previously published reports remain dated planning context; the report itself controls.",
+      "Reviewed September 27, 2026 at 6:33 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. Previously published reports remain dated planning context; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 26, 2026 at 6:31 AM CDT. The official survey listing shows dated Middle Mississippi uploads through September 14 and Melvin Price Pool uploads through September 1; no newer local posting was confirmed during this check. Surveys are dated context, not current conditions.",
+      "Reviewed September 27, 2026 at 6:33 AM CDT. The official survey listing shows dated Middle Mississippi uploads through September 14 and Melvin Price Pool uploads through September 1; no newer local posting was confirmed during this check. Surveys are dated context, not current conditions.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 26, 2026 at 6:31 AM CDT. No newer local condition item was confirmed during this check. The September 24 Lock and Dam 25 construction update remains dated context; the official notice controls.",
+      "Reviewed September 27, 2026 at 6:33 AM CDT. A September 25 revision to the Dredge Goetz notice schedules work at the Upper Chain of Rocks Canal Entrance, mile 194.1, beginning September 27; the official notice controls.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 26, 2026 at 6:31 AM CDT. No newer local condition item was confirmed during this check. The official notices control.",
+      "Reviewed September 27, 2026 at 6:33 AM CDT. September 25 Upper Mississippi notices included a Dredge Goetz update at mile 194.1 and other notices outside the local reach; official notices control.",
   },
 ] as const;
 
@@ -252,9 +252,9 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 26, 2026 at 6:31 AM CDT.</strong> The latest NWS issuance is
-              September 25. No newer local USACE or Coast Guard condition item was confirmed during this review;
-              official sources control.
+              <strong>Morning check: September 27, 2026 at 6:33 AM CDT.</strong> The latest NWS issuance is
+              September 26. A September 25 USACE notice revision identifies Dredge Goetz work beginning September
+              27 at the Upper Chain of Rocks Canal Entrance; official sources control.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -267,16 +267,17 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 26: the latest published{" "}
+              Planning context for September 27: the latest published{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              issued September 25, reports Alton down 0.6 foot to 14.8 feet, Mel Price up 0.5 foot to 12.7 feet,
-              and St. Louis up 0.8 foot to 15.2 feet over 24 hours. The dated September 24{" "}
-              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215092&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
+              issued September 26, reports Alton down 0.3 foot to 14.5 feet, Mel Price up 0.5 foot to 13.2 feet,
+              and St. Louis up 0.7 foot to 15.9 feet over 24 hours. The dated September 25{" "}
+              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215102&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
                 USACE notice
               </a>{" "}
-              adds September 29 and October 1 Lock and Dam 25 construction-closure dates.
+              revises the Dredge Goetz schedule and identifies work at the Upper Chain of Rocks Canal Entrance,
+              mile 194.1, beginning September 27.
               Those reported details belong to their official sources. River stages alone do not establish vessel
               access or a delivery window.
             </p>
