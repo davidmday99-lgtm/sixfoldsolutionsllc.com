@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 29, 2026",
+    time: "6:32 AM CDT",
+    summary:
+      "The September 28 NWS River Summary reports Alton 14.4 feet (down 0.4), Mel Price 13.2 feet (down 0.2), and St. Louis 16.2 feet (down 0.2). A September 28 USACE update adds an October 6 Lock and Dam 25 construction-closure date; Lock and Dam 25 is upstream of the Alton/Melvin Price reach. The official notice controls.",
+    source: "USACE Notice to Navigation Interests",
+    href: "https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215108&in_title_formatting=UB",
+  },
+  {
     date: "September 28, 2026",
     time: "6:32 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "September 13, 2026",
-    time: "6:32 AM CDT",
-    summary:
-      "The latest NWS summary, issued September 12, shows Alton steady at 19.2 feet, Mel Price up 0.4 foot to 3.5 feet, and St. Louis up 0.7 foot to 0.3 foot; no newer relevant USACE active notice was identified.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 28, 2026 at 6:32 AM CDT. The latest issuance, September 27 at 9:00 AM CDT, reports Alton 14.8 feet (up 0.2), Mel Price Lock and Dam 13.4 feet (up 0.2), and St. Louis 16.4 feet (up 0.5).",
+      "Reviewed September 29, 2026 at 6:32 AM CDT. The latest issuance, September 28 at 9:00 AM CDT, reports Alton 14.4 feet (down 0.4), Mel Price Lock and Dam 13.2 feet (down 0.2), and St. Louis 16.2 feet (down 0.2).",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 28, 2026 at 6:32 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. Previously published reports remain dated planning context; the report itself controls.",
+      "Reviewed September 29, 2026 at 6:32 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. Previously published reports remain dated planning context; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 28, 2026 at 6:32 AM CDT. The official survey listing shows dated Middle Mississippi uploads through September 14 and Melvin Price Pool uploads through September 1; no newer local posting was confirmed during this check. Surveys are dated context, not current conditions.",
+      "Reviewed September 29, 2026 at 6:32 AM CDT. The official survey listing shows dated Middle Mississippi uploads through September 14 and Melvin Price Pool uploads through September 1; no newer local posting was confirmed during this check. Surveys are dated context, not current conditions.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 28, 2026 at 6:32 AM CDT. No newer local notice was confirmed in the active St. Louis District feed. The September 25 Dredge Goetz revision remains dated context; the official notice controls.",
+      "Reviewed September 29, 2026 at 6:32 AM CDT. The active St. Louis District feed includes a September 28 Lock and Dam 25 construction-schedule update that adds October 6. Lock and Dam 25 is upstream of the Alton/Melvin Price reach; the official notice controls.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 28, 2026 at 6:32 AM CDT. A September 26 High Water Watch notice covers Pool 24, river miles 273.4–301.1, upstream of the Alton/Melvin Price reach; other reviewed items did not add a newer local condition statement. Official notices control.",
+      "Reviewed September 29, 2026 at 6:32 AM CDT. September 28 notices include a Lock and Dam 25 closure notice for September 29, upstream of the Alton/Melvin Price reach, and an off-station buoy report at Upper Mississippi River mile 169.5. Official notices control.",
   },
 ] as const;
 
@@ -252,8 +252,8 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 28, 2026 at 6:32 AM CDT.</strong> The latest NWS issuance is
-              September 27. No newer local USACE condition notice was confirmed; official sources control.
+              <strong>Morning check: September 29, 2026 at 6:32 AM CDT.</strong> The latest NWS issuance is
+              September 28. A new USACE Lock and Dam 25 construction-schedule update was reviewed; official sources control.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -266,17 +266,16 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for September 28: the latest published{" "}
+              Planning context for September 29: the latest published{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>{" "}
-              issued September 27, reports Alton up 0.2 foot to 14.8 feet, Mel Price up 0.2 foot to 13.4 feet,
-              and St. Louis up 0.5 foot to 16.4 feet over 24 hours. The September 26 Coast Guard{" "}
-              <a href="https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=70036723" target="_blank" rel="noopener noreferrer">
-                Coast Guard notice
+              issued September 28, reports Alton down 0.4 foot to 14.4 feet, Mel Price down 0.2 foot to 13.2 feet,
+              and St. Louis down 0.2 foot to 16.2 feet over 24 hours. The September 28 USACE{" "}
+              <a href="https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215108&amp;in_title_formatting=UB" target="_blank" rel="noopener noreferrer">
+                Lock and Dam 25 notice
               </a>{" "}
-              identifies a High Water Watch for Pool 24, river miles 273.4–301.1, upstream of the Alton/Melvin Price
-              reach. No material official update was found for the local reach during this check.
+              adds an October 6 construction-closure date at river mile 241.4, upstream of the Alton/Melvin Price reach.
               Those reported details belong to their official sources. River stages alone do not establish vessel
               access or a delivery window.
             </p>
