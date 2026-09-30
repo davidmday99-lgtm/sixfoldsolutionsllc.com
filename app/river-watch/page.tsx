@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "September 30, 2026",
+    time: "6:33 AM CDT",
+    summary:
+      "The September 29 NWS River Summary reports Alton 14.3 feet (steady), Mel Price 11.8 feet (down 1.4), and St. Louis 15.1 feet (down 1.1). A September 29 Coast Guard notice identifies the Washington and Jefferson reaches in Low Water Watch; the official notice controls.",
+    source: "Coast Guard Broadcast Notice to Mariners",
+    href: "https://www.navcen.uscg.gov/broadcast-notice-to-mariners-message?guid=70062071",
+  },
+  {
     date: "September 29, 2026",
     time: "6:32 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "September 14, 2026",
-    time: "6:32 AM CDT",
-    summary:
-      "The September 13 NWS summary shows Alton up 0.5 foot to 19.7 feet, Mel Price up 1.1 feet to 4.6 feet, and St. Louis up 1.6 feet to 2.0 feet; the September 9 USACE weekly status report is now the newest listed report.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed September 29, 2026 at 6:32 AM CDT. The latest issuance, September 28 at 9:00 AM CDT, reports Alton 14.4 feet (down 0.4), Mel Price Lock and Dam 13.2 feet (down 0.2), and St. Louis 16.2 feet (down 0.2).",
+      "Reviewed September 30, 2026 at 6:33 AM CDT. The latest issuance, September 29 at 9:00 AM CDT, reports Alton 14.3 feet (steady), Mel Price Lock and Dam 11.8 feet (down 1.4), and St. Louis 15.1 feet (down 1.1).",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed September 29, 2026 at 6:32 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. Previously published reports remain dated planning context; the report itself controls.",
+      "Reviewed September 30, 2026 at 6:33 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. Previously published reports remain dated planning context; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed September 29, 2026 at 6:32 AM CDT. The official survey listing shows dated Middle Mississippi uploads through September 14 and Melvin Price Pool uploads through September 1; no newer local posting was confirmed during this check. Surveys are dated context, not current conditions.",
+      "Reviewed September 30, 2026 at 6:33 AM CDT. The official survey listing shows dated Middle Mississippi uploads through September 14 and Melvin Price Pool uploads through September 1; no newer local posting was confirmed during this check. Surveys are dated context, not current conditions.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed September 29, 2026 at 6:32 AM CDT. The active St. Louis District feed includes a September 28 Lock and Dam 25 construction-schedule update that adds October 6. Lock and Dam 25 is upstream of the Alton/Melvin Price reach; the official notice controls.",
+      "Reviewed September 30, 2026 at 6:33 AM CDT. The active St. Louis District feed showed no newer item than the September 28 Lock and Dam 25 construction-schedule update. Lock and Dam 25 is upstream of the Alton/Melvin Price reach; the official notice controls.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed September 29, 2026 at 6:32 AM CDT. September 28 notices include a Lock and Dam 25 closure notice for September 29, upstream of the Alton/Melvin Price reach, and an off-station buoy report at Upper Mississippi River mile 169.5. Official notices control.",
+      "Reviewed September 30, 2026 at 6:33 AM CDT. A September 29 notice identifies the Washington and Jefferson reaches in Low Water Watch. The official notice controls.",
   },
 ] as const;
 
@@ -252,8 +252,8 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: September 29, 2026 at 6:32 AM CDT.</strong> The latest NWS issuance is
-              September 28. A new USACE Lock and Dam 25 construction-schedule update was reviewed; official sources control.
+              <strong>Morning check: September 30, 2026 at 6:33 AM CDT.</strong> The latest NWS issuance is
+              September 29. A Coast Guard Low Water Watch notice for the Washington and Jefferson reaches was reviewed; official sources control.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
