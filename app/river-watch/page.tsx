@@ -273,7 +273,7 @@ export default function RiverWatchPage() {
               issued September 30, reports Alton steady at 14.3 feet, Mel Price down 0.6 foot to 11.3 feet,
               and St. Louis down 1.7 feet to 13.5 feet over 24 hours. No newer local USACE or Coast Guard
               condition item was confirmed during this morning review. Those reported details belong to their official sources. River stages alone do not establish vessel
-              access or a delivery window.
+              access or a delivery window. The NWS defines <a href="https://forecast.weather.gov/glossary.php?word=STAGE" target="_blank" rel="noopener noreferrer">river stage</a> as the water-surface level above an established datum at a given location, so preserve the gauge name and issuance date when using it as planning context.
             </p>
             <p>
               This page receives a dated morning check every day. If no material official update is available,

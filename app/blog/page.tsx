@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-a-river-gauge-can-and-cannot-tell-a-shoreside-team",
+    ariaLabel: "Read What A River Gauge Can—and Cannot—Tell A Shoreside Team",
+    dateTime: "2026-10-01",
+    dateLabel: "October 1, 2026",
+    category: "River Conditions",
+    readTime: "4 minute read",
+    title: "What A River Gauge Can—and Cannot—Tell A Shoreside Team",
+    description: "Why a river stage is useful planning context, but not proof of dock access, channel conditions, or a vessel schedule.",
+  },
+  {
     href: "/blog/what-dredge-potters-2026-return-means-for-a-shoreside-plan",
     ariaLabel: "Read What Dredge Potter’s 2026 Return Means For A Shoreside Plan",
     dateTime: "2026-09-24",
