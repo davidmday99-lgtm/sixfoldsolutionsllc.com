@@ -62,9 +62,9 @@ const dailyChecks = [
     date: "October 15, 2026",
     time: "6:28 AM CDT",
     summary:
-      "Before the next NWS issuance, the latest River Summary is dated October 14: Alton 17.1 feet (down 2.0), Mel Price 11.1 feet (up 0.8), and St. Louis 13.6 feet (up 1.5). No newer local USACE or Coast Guard condition item was confirmed in the official source listings reviewed this morning; official sources control.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+      "The latest NWS River Summary is dated October 14: Alton 17.1 feet (down 2.0), Mel Price 11.1 feet (up 0.8), and St. Louis 13.6 feet (up 1.5). For upstream planning context, USACE’s October 6 Lock 25 notice listed an October 13 construction-related closure; its stated date is now past, so later official updates control.",
+    source: "USACE Notice to Navigation Interests",
+    href: "https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215160&in_title_formatting=UB",
   },
   {
     date: "October 14, 2026",
@@ -252,7 +252,7 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: October 15, 2026 at 6:28 AM CDT.</strong> The latest NWS River Summary is dated October 14: Alton 17.1 feet (down 2.0), Mel Price 11.1 feet (up 0.8), and St. Louis 13.6 feet (up 1.5). These are dated planning context before the next issuance; official sources control.
+              <strong>Morning check: October 15, 2026 at 6:28 AM CDT.</strong> The latest NWS River Summary is dated October 14: Alton 17.1 feet (down 2.0), Mel Price 11.1 feet (up 0.8), and St. Louis 13.6 feet (up 1.5). USACE&apos;s October 6 Lock 25 notice listed an October 13 construction-related closure; the listed date is now past, so later official updates control. These are dated planning context before the next issuance.
             </p>
             <p>
               <strong>Sources reviewed:</strong>

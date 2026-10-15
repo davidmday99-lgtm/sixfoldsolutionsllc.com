@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-an-upstream-lock-notice-can-and-cannot-tell-a-shoreside-team",
+    ariaLabel: "Read What An Upstream Lock Notice Can—and Cannot—Tell A Shoreside Team",
+    dateTime: "2026-10-15",
+    dateLabel: "October 15, 2026",
+    category: "Lock Operations",
+    readTime: "4 minute read",
+    title: "What An Upstream Lock Notice Can—and Cannot—Tell A Shoreside Team",
+    description: "How a dated USACE lock notice can support a handoff conversation without becoming a local access answer or vessel schedule.",
+  },
+  {
     href: "/blog/what-a-river-gauge-can-and-cannot-tell-a-shoreside-team",
     ariaLabel: "Read What A River Gauge Can—and Cannot—Tell A Shoreside Team",
     dateTime: "2026-10-01",
