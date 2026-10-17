@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "October 17, 2026",
+    time: "6:30 AM CDT",
+    summary:
+      "The latest NWS River Summary is dated October 16: Alton 18.5 feet (down 0.2), Mel Price 9.6 feet (up 0.2), and St. Louis 11.4 feet (up 0.2). USACE St. Louis status and notice listings, survey pages, and Coast Guard District 8 notices were also reviewed; no newer local condition item was confirmed in the accessible official listings. These observations are dated planning context; official sources control.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
     date: "October 15, 2026",
     time: "6:28 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "October 1, 2026",
-    time: "6:32 AM CDT",
-    summary:
-      "Before the next NWS issuance, the latest published River Summary remains September 30: Alton 14.3 feet (steady), Mel Price 11.3 feet (down 0.6), and St. Louis 13.5 feet (down 1.7). No newer local USACE or Coast Guard condition item was confirmed during this morning review; official sources control.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed October 15, 2026 at 6:28 AM CDT. The latest published River Summary is dated October 14, 2026; its observations are dated planning context rather than a current October 15 reading.",
+      "Reviewed October 17, 2026 at 6:30 AM CDT. The latest published River Summary is dated October 16, 2026; its observations are dated planning context rather than a current October 17 reading.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed October 15, 2026 at 6:28 AM CDT. The status-report page did not permit a current listing review during this check, so no newer weekly channel-condition report was confirmed. Previously published reports remain dated planning context; the report itself controls.",
+      "Reviewed October 17, 2026 at 6:30 AM CDT. No newer local weekly channel-condition report was confirmed in the accessible listing during this check. Previously published reports remain dated planning context; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed October 15, 2026 at 6:28 AM CDT. The survey page did not permit a current listing review during this check, so no newer local survey posting was confirmed. Surveys are dated context, not current conditions.",
+      "Reviewed October 17, 2026 at 6:30 AM CDT. No newer local survey posting was confirmed in the accessible listing during this check. Surveys are dated context, not current conditions.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed October 15, 2026 at 6:28 AM CDT. No newer local navigation-condition item was confirmed during this review. The official notices control.",
+      "Reviewed October 17, 2026 at 6:30 AM CDT. No newer local navigation-condition item was confirmed in the accessible listing during this review. The official notices control.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed October 15, 2026 at 6:28 AM CDT. No newer local Alton/Melvin Price condition item was confirmed during this review. The official notice controls.",
+      "Reviewed October 17, 2026 at 6:30 AM CDT. No newer local Alton/Melvin Price condition item was confirmed in the accessible listing during this review. The official notice controls.",
   },
 ] as const;
 
@@ -252,7 +252,7 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: October 15, 2026 at 6:28 AM CDT.</strong> The latest NWS River Summary is dated October 14: Alton 17.1 feet (down 2.0), Mel Price 11.1 feet (up 0.8), and St. Louis 13.6 feet (up 1.5). USACE&apos;s October 6 Lock 25 notice listed an October 13 construction-related closure; the listed date is now past, so later official updates control. These are dated planning context before the next issuance.
+              <strong>Morning check: October 17, 2026 at 6:30 AM CDT.</strong> The latest NWS River Summary is dated October 16: Alton 18.5 feet (down 0.2), Mel Price 9.6 feet (up 0.2), and St. Louis 11.4 feet (up 0.2). These are dated planning context before the next issuance.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -265,10 +265,10 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for October 15: the October 14 NWS River Summary is the latest published summary during this morning's review. Review the{" "}
+              Planning context for October 17: the October 16 NWS River Summary is the latest published summary during this morning's review. Review the{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
-              </a>, USACE status and survey pages, and District 8 notice listings. The status and survey pages did not permit a current listing review, and no additional local condition item was confirmed in the official source listings reviewed. The October 14 NWS observations remain dated context. Those reported details belong to their official sources. River stages alone do not establish vessel
+              </a>, USACE status and survey pages, and District 8 notice listings. No additional local condition item was confirmed in the accessible official listings reviewed. The October 16 NWS observations remain dated context. Those reported details belong to their official sources. River stages alone do not establish vessel
               access or a delivery window. The NWS defines <a href="https://forecast.weather.gov/glossary.php?word=STAGE" target="_blank" rel="noopener noreferrer">river stage</a> as the water-surface level above an established datum at a given location, so preserve the gauge name and issuance date when using it as planning context.
             </p>
             <p>
