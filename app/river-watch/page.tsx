@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "October 19, 2026",
+    time: "6:30 AM CDT",
+    summary:
+      "The latest NWS St. Louis River Summary, issued October 18 at 9:00 AM CDT, reports Alton 19.7 feet (up 1.4), Mel Price 7.8 feet (down 1.0), and St. Louis 8.9 feet (down 1.5). USACE St. Louis status and survey pages, USACE Notices to Navigation Interests, and Coast Guard District 8 notice listings were also reviewed; no newer local condition item was confirmed in the accessible official listings. These observations are dated planning context; official sources control.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
     date: "October 18, 2026",
     time: "6:30 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "October 3, 2026",
-    time: "6:32 AM CDT",
-    summary:
-      "Before the next NWS issuance, the latest published River Summary remains October 2: Alton 15.4 feet (up 0.7), Mel Price 9.3 feet (down 0.8), and St. Louis 10.4 feet (down 1.3). A new USACE notice states that dredging begins at Melvin Price's Auxiliary Lock October 3 and that the Auxiliary Lock is closed for that work; the official notice controls.",
-    source: "USACE Notice to Navigation Interests",
-    href: "https://ndc.ops.usace.army.mil/ords/ntni/print_nav_notice?in_nav_notice_number=215138&in_title_formatting=UB",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed October 18, 2026 at 6:30 AM CDT. The latest forecast guidance reviewed was issued October 14; its observations and forecasts are dated planning context rather than current October 18 readings.",
+      "Reviewed October 19, 2026 at 6:30 AM CDT. The latest NWS River Summary reviewed was issued October 18 at 9:00 AM CDT; its reported stages are dated planning context rather than current readings.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed October 18, 2026 at 6:30 AM CDT. No newer local weekly channel-condition report was confirmed in the accessible listing during this review. Previously published reports remain dated planning context; the report itself controls.",
+      "Reviewed October 19, 2026 at 6:30 AM CDT. No newer local weekly channel-condition report was confirmed in the accessible listing during this review. Previously published reports remain dated planning context; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed October 18, 2026 at 6:30 AM CDT. No newer local survey posting was confirmed in the accessible listing during this check. Surveys are dated context, not current conditions.",
+      "Reviewed October 19, 2026 at 6:30 AM CDT. No newer local survey posting was confirmed in the accessible listing during this check. Surveys are dated context, not current conditions.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed October 18, 2026 at 6:30 AM CDT. No newer local navigation-condition item was confirmed in the accessible listing during this review. The official notices control.",
+      "Reviewed October 19, 2026 at 6:30 AM CDT. No newer local navigation-condition item was confirmed in the accessible listing during this review. The official notices control.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed October 18, 2026 at 6:30 AM CDT. No newer local Alton/Melvin Price condition item was confirmed in the accessible listing during this review. The official notice controls.",
+      "Reviewed October 19, 2026 at 6:30 AM CDT. No newer local Alton/Melvin Price condition item was confirmed in the accessible listing during this review. The official notice controls.",
   },
 ] as const;
 
@@ -252,7 +252,7 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: October 18, 2026 at 6:30 AM CDT.</strong> No material official local condition update was confirmed in this review. The latest NWS forecast guidance reviewed was issued October 14; its observations and forecasts are dated planning context before a newer official issuance.
+              <strong>Morning check: October 19, 2026 at 6:30 AM CDT.</strong> The latest NWS St. Louis River Summary, issued October 18 at 9:00 AM CDT, reports Alton 19.7 feet (up 1.4), Mel Price 7.8 feet (down 1.0), and St. Louis 8.9 feet (down 1.5). Those reported observations are dated planning context; official sources control.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -265,7 +265,7 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for October 18: no material local condition update was confirmed in the accessible official listings reviewed. The latest NWS forecast guidance reviewed was issued October 14; its observations and forecasts remain dated context. Review the{" "}
+              Planning context for October 19: the latest NWS River Summary reviewed was issued October 18 at 9:00 AM CDT and reports Alton 19.7 feet, Mel Price 7.8 feet, and St. Louis 8.9 feet. Those values are dated context. Review the{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
               </a>, USACE status and survey pages, and District 8 notice listings. Those reported details belong to their official sources. River stages alone do not establish vessel
