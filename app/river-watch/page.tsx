@@ -59,6 +59,14 @@ const sources = [
 
 const dailyChecks = [
   {
+    date: "October 21, 2026",
+    time: "6:34 AM CDT",
+    summary:
+      "The October 20 NWS River Summary reports Alton 18.1 feet (up 0.3), Mel Price 7.4 feet (down 1.2), and St. Louis 8.2 feet (down 1.8). USACE St. Louis status and survey pages, USACE Notices to Navigation Interests, and Coast Guard District 8 notices were also reviewed; no newer local condition item was confirmed in the accessible official listings. These observations are dated planning context; official sources control.",
+    source: "NWS St. Louis River Summary",
+    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
+  },
+  {
     date: "October 20, 2026",
     time: "6:32 AM CDT",
     summary:
@@ -162,41 +170,33 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "October 5, 2026",
-    time: "6:31 AM CDT",
-    summary:
-      "The October 4 NWS River Summary reports Alton 16.5 feet (down 1.5), Mel Price 12.9 feet (up 2.9), and St. Louis 15.3 feet (up 4.2). No newer local USACE or Coast Guard condition item was confirmed during this morning review; official sources control.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
-  },
 ] as const;
 
 const reviewedSources = [
   {
     name: "NWS St. Louis River Summary",
     detail:
-      "Reviewed October 20, 2026 at 6:32 AM CDT. The latest NWS River Summary reviewed was issued October 18 at 9:00 AM CDT; its reported stages are dated planning context rather than current readings.",
+      "Reviewed October 21, 2026 at 6:34 AM CDT. The latest NWS River Summary reviewed was issued October 20 at 9:01 AM CDT; its reported stages are dated planning context rather than current readings.",
   },
   {
     name: "USACE St. Louis Weekly Status Report",
     detail:
-      "Reviewed October 20, 2026 at 6:32 AM CDT. No newer local weekly channel-condition report was confirmed in the accessible listing during this review. Previously published reports remain dated planning context; the report itself controls.",
+      "Reviewed October 21, 2026 at 6:34 AM CDT. No newer local weekly channel-condition report was confirmed in the accessible listing during this review. Previously published reports remain dated planning context; the report itself controls.",
   },
   {
     name: "USACE St. Louis Survey Pages / E-Hydro postings",
     detail:
-      "Reviewed October 20, 2026 at 6:32 AM CDT. No newer local survey posting was confirmed in the accessible listing during this check. Surveys are dated context, not current conditions.",
+      "Reviewed October 21, 2026 at 6:34 AM CDT. No newer local survey posting was confirmed in the accessible listing during this check. Surveys are dated context, not current conditions.",
   },
   {
     name: "USACE Notices to Navigation Interests",
     detail:
-      "Reviewed October 20, 2026 at 6:32 AM CDT. No newer local navigation-condition item was confirmed in the accessible listing during this review. The official notices control.",
+      "Reviewed October 21, 2026 at 6:34 AM CDT. No newer local navigation-condition item was confirmed in the accessible listing during this review. The official notices control.",
   },
   {
     name: "Coast Guard District 8 Upper Mississippi Broadcast Notices to Mariners",
     detail:
-      "Reviewed October 20, 2026 at 6:32 AM CDT. No newer local Alton/Melvin Price condition item was confirmed in the accessible listing during this review. The official notice controls.",
+      "Reviewed October 21, 2026 at 6:34 AM CDT. No newer local Alton/Melvin Price condition item was confirmed in the accessible listing during this review. The official notice controls.",
   },
 ] as const;
 
@@ -252,7 +252,7 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: October 20, 2026 at 6:32 AM CDT.</strong> No material official local condition update was confirmed in the accessible Alton/Melvin Price listings reviewed this morning. Official sources control.
+              <strong>Morning check: October 21, 2026 at 6:34 AM CDT.</strong> The latest NWS River Summary is dated October 20: Alton 18.1 feet (up 0.3), Mel Price 7.4 feet (down 1.2), and St. Louis 8.2 feet (down 1.8). These are dated planning context before the next issuance.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
@@ -265,10 +265,10 @@ export default function RiverWatchPage() {
               ))}
             </ul>
             <p>
-              Planning context for October 20: no newer Alton/Melvin Price condition item was confirmed in the official listings reviewed this morning. Review the{" "}
+              Planning context for October 21: the October 20 NWS River Summary is the latest published summary during this morning's review. Review the{" "}
               <a href="https://forecast.weather.gov/product.php?issuedby=lsx&amp;product=RVA&amp;site=lsx" target="_blank" rel="noopener noreferrer">
                 NWS river summary
-              </a>, USACE status and survey pages, and District 8 notice listings. Those reported details belong to their official sources. River stages alone do not establish vessel
+              </a>, USACE status and survey pages, and District 8 notice listings. No additional local condition item was confirmed in the accessible official listings reviewed. The October 20 NWS observations remain dated context. Those reported details belong to their official sources. River stages alone do not establish vessel
               access or a delivery window. The NWS defines <a href="https://forecast.weather.gov/glossary.php?word=STAGE" target="_blank" rel="noopener noreferrer">river stage</a> as the water-surface level above an established datum at a given location, so preserve the gauge name and issuance date when using it as planning context.
             </p>
             <p>
