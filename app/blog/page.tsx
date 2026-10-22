@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/why-a-source-timestamp-belongs-in-a-mississippi-river-delivery-request",
+    ariaLabel: "Read Why A Source Timestamp Belongs In A Mississippi River Delivery Request",
+    dateTime: "2026-10-22",
+    dateLabel: "October 22, 2026",
+    category: "Operations Planning",
+    readTime: "4 minute read",
+    title: "Why A Source Timestamp Belongs In A Mississippi River Delivery Request",
+    description: "How keeping an official source, location, and timestamp together makes a river handoff conversation clearer without implying a vessel schedule.",
+  },
+  {
     href: "/blog/what-an-upstream-lock-notice-can-and-cannot-tell-a-shoreside-team",
     ariaLabel: "Read What An Upstream Lock Notice Can—and Cannot—Tell A Shoreside Team",
     dateTime: "2026-10-15",
