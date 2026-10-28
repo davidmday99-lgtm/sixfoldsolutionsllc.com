@@ -58,6 +58,7 @@ const sources = [
 ] as const;
 
 const dailyChecks = [
+  { date: "October 28, 2026", time: "6:32 AM CDT", summary: "The NWS River Summary issued October 27 at 9:01 AM CDT reports Alton 18.6 feet (up 0.1), Mel Price 5.6 feet (down 1.3), and St. Louis 4.7 feet (down 2.0). Its River Statement projects Mel Price at 5.0 feet and St. Louis at 3.0 feet on November 1. USACE status and survey pages were unavailable, the USACE notice table did not load, and no newer local District 8 item was confirmed in accessible Coast Guard listings. These are dated planning context; official sources control.", source: "NWS St. Louis River Summary", href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx" },
   { date: "October 26, 2026", time: "6:27 AM CDT", summary: "The NWS summary issued October 24 at 9:01 AM CDT reports Alton 18.4 feet (down 0.3), Mel Price 7.7 feet (down 0.3), and St. Louis 8.2 feet (down 0.5). These observations are dated planning context. USACE status and survey pages and Coast Guard notices were inaccessible; the USACE notice table did not load.", source: "NWS St. Louis River Summary", href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx" },
   {
     date: "October 23, 2026",
@@ -155,21 +156,13 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "October 8, 2026",
-    time: "6:28 AM CDT",
-    summary:
-      "No material official local condition update was confirmed during this morning review of the NWS St. Louis River Summary, USACE St. Louis status and survey pages, USACE Notices to Navigation Interests, and Coast Guard District 8 notices. Previously published information remains dated context; official sources control.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
-  },
 ] as const;
 
 const reviewedSources = [
-  { name: "NWS St. Louis River Summary", detail: "Reviewed October 26, 2026 at 6:27 AM CDT. The available summary was issued October 24 at 9:01 AM CDT." },
-  { name: "USACE St. Louis status and survey pages", detail: "Access was denied during this review; current listings could not be confirmed." },
+  { name: "NWS St. Louis River Summary and River Statement", detail: "Reviewed October 28, 2026 at 6:32 AM CDT. The latest River Summary was issued October 27 at 9:01 AM CDT; the latest River Statement was issued October 27 at 11:02 AM CDT." },
+  { name: "USACE St. Louis status and survey pages", detail: "Status and survey pages were unavailable during this review; current listings could not be confirmed." },
   { name: "USACE Notices to Navigation Interests", detail: "The notice table did not load during this review." },
-  { name: "Coast Guard Broadcast Notices to Mariners", detail: "Access was denied during this review; District 8 notices could not be confirmed." },
+  { name: "Coast Guard Broadcast Notices to Mariners", detail: "District 8 listings were reviewed; no newer local condition item was confirmed in the accessible results." },
 ] as const;
 
 export default function RiverWatchPage() {
@@ -224,7 +217,7 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Morning check: October 26, 2026 at 6:27 AM CDT.</strong> The October 24 NWS summary reports Alton 18.4 feet (down 0.3), Mel Price 7.7 feet (down 0.3), and St. Louis 8.2 feet (down 0.5). These observations are dated planning context.
+              <strong>Morning check: October 28, 2026 at 6:32 AM CDT.</strong> The October 27 NWS summary reports Alton 18.6 feet (up 0.1), Mel Price 5.6 feet (down 1.3), and St. Louis 4.7 feet (down 2.0). The NWS River Statement projects Mel Price at 5.0 feet and St. Louis at 3.0 feet on November 1. These are dated planning context.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
