@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-an-active-dredge-notice-means-for-a-mississippi-river-handoff",
+    ariaLabel: "Read What An Active Dredge Notice Means For A Mississippi River Handoff",
+    dateTime: "2026-10-29",
+    dateLabel: "October 29, 2026",
+    category: "River Operations",
+    readTime: "4 minute read",
+    title: "What An Active Dredge Notice Means For A Mississippi River Handoff",
+    description: "How a current, reach-specific USACE dredging notice can support a handoff conversation without becoming a vessel schedule or access answer.",
+  },
+  {
     href: "/blog/why-a-source-timestamp-belongs-in-a-mississippi-river-delivery-request",
     ariaLabel: "Read Why A Source Timestamp Belongs In A Mississippi River Delivery Request",
     dateTime: "2026-10-22",
