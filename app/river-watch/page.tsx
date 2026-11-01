@@ -58,6 +58,7 @@ const sources = [
 ] as const;
 
 const dailyChecks = [
+  { date: "November 1, 2026", time: "6:26 AM CST", summary: "The latest NWS St. Louis River Summary available during this morning review was issued October 31 at 9:01 AM CDT and reports Alton 18.9 feet (up 0.5), Mel Price 5.1 feet (down 0.6), and St. Louis 3.3 feet (down 1.4). The official USACE notice table continues to list Notice 215138-1, dated October 21 and listed until further notice, for channel-maintenance dredging and an auxiliary-lock closure at Melvin Price Locks and Dam (Upper Mississippi River Mile 200.5). USACE status and survey pages were reviewed; no newer local item was confirmed in the accessible official listings, and the Coast Guard notice listing returned an access restriction. These are dated planning context; official sources control.", source: "NWS St. Louis River Summary", href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx" },
   { date: "October 31, 2026", time: "6:27 AM CDT", summary: "The NWS River Summary issued October 30 at 9:01 AM CDT reports Alton 18.3 feet (down 0.4), Mel Price 5.7 feet (down 0.4), and St. Louis 4.7 feet (down 0.6). The USACE notice table and E-Hydro survey dashboard were reviewed; the USACE St. Louis status page and Coast Guard notice listing returned access restrictions during this review, so no newer local item was confirmed there. These are dated planning context; official sources control.", source: "NWS St. Louis River Summary", href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx" },
   { date: "October 30, 2026", time: "6:28 AM CDT", summary: "No material newer official local condition update was confirmed during this morning review. The latest NWS St. Louis River Summary remains the October 29, 9:01 AM CDT issuance: Alton 18.7 feet (down 0.7), Mel Price 6.1 feet (up 0.9), and St. Louis 5.3 feet (up 1.6). The official USACE notice listing continues to show Notice 215138-1, dated October 21 and listed until further notice, for channel-maintenance dredging and an auxiliary-lock closure at Melvin Price Locks and Dam (Upper Mississippi River Mile 200.5). USACE status and survey pages and Coast Guard listings did not yield a newer local item during this review. These are dated planning context; official sources control.", source: "NWS St. Louis River Summary", href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx" },
   { date: "October 29, 2026", time: "4:12 PM CDT", summary: "The NWS River Summary issued October 29 at 9:01 AM CDT reports Alton 18.7 feet (down 0.7), Mel Price 6.1 feet (up 0.9), and St. Louis 5.3 feet (up 1.6). The official USACE notice listing also shows Notice 215138-1, dated October 21 and listed until further notice, for channel-maintenance dredging and an auxiliary-lock closure at Melvin Price Locks and Dam (Upper Mississippi River Mile 200.5). USACE status and survey pages and Coast Guard listings were unavailable during this review. These are dated planning context; official sources control.", source: "USACE Notices to Navigation Interests", href: "https://ndc.ops.usace.army.mil/ords/f?p=107:1" },
@@ -127,21 +128,13 @@ const dailyChecks = [
     source: "NWS St. Louis River Summary",
     href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
   },
-  {
-    date: "October 13, 2026",
-    time: "6:34 AM CDT",
-    summary:
-      "Before the next NWS issuance, the latest River Summary is dated October 12: Alton 15.8 feet (down 0.4), Mel Price 11.6 feet (down 0.4), and St. Louis 14.5 feet (down 0.8). No newer local USACE or Coast Guard condition item was confirmed in the official source listings reviewed this morning; official sources control.",
-    source: "NWS St. Louis River Summary",
-    href: "https://forecast.weather.gov/product.php?issuedby=lsx&product=RVA&site=lsx",
-  },
 ] as const;
 
 const reviewedSources = [
-  { name: "NWS St. Louis River Summary", detail: "Reviewed October 31, 2026 at 6:27 AM CDT. The latest available summary was issued October 30 at 9:01 AM CDT." },
-  { name: "USACE St. Louis status and E-Hydro survey pages", detail: "Reviewed October 31, 2026 at 6:27 AM CDT. The E-Hydro dashboard was available; the St. Louis status page returned an access restriction." },
-  { name: "USACE Notices to Navigation Interests", detail: "Reviewed October 31, 2026 at 6:27 AM CDT; no newer Alton/Melvin Price local condition item was confirmed in the public notice table." },
-  { name: "Coast Guard Broadcast Notices to Mariners", detail: "Checked October 31, 2026 at 6:27 AM CDT; the official listing returned an access restriction during this review." },
+  { name: "NWS St. Louis River Summary", detail: "Reviewed November 1, 2026 at 6:26 AM CST. The latest available summary was issued October 31 at 9:01 AM CDT." },
+  { name: "USACE St. Louis status and E-Hydro survey pages", detail: "Reviewed November 1, 2026 at 6:26 AM CST; no newer Alton/Melvin Price local item was confirmed in the accessible official listings." },
+  { name: "USACE Notices to Navigation Interests", detail: "Reviewed November 1, 2026 at 6:26 AM CST. The public notice table continues to list Notice 215138-1, dated October 21 and listed until further notice, for channel-maintenance dredging and an auxiliary-lock closure at Melvin Price." },
+  { name: "Coast Guard Broadcast Notices to Mariners", detail: "Checked November 1, 2026 at 6:26 AM CST; the official listing returned an access restriction during this review." },
 ] as const;
 
 export default function RiverWatchPage() {
@@ -196,7 +189,7 @@ export default function RiverWatchPage() {
           </div>
           <div>
             <p>
-              <strong>Daily check: October 31, 2026 at 6:27 AM CDT.</strong> The latest NWS River Summary, issued October 30 at 9:01 AM CDT, reports Alton 18.3 feet (down 0.4), Mel Price 5.7 feet (down 0.4), and St. Louis 4.7 feet (down 0.6). The USACE notice table and E-Hydro survey dashboard were reviewed; no newer local condition item was confirmed there. The USACE St. Louis status page and Coast Guard notice listing returned access restrictions during this review. These are dated planning context.
+              <strong>Daily check: November 1, 2026 at 6:26 AM CST.</strong> The latest NWS River Summary available during this review was issued October 31 at 9:01 AM CDT and reports Alton 18.9 feet (up 0.5), Mel Price 5.1 feet (down 0.6), and St. Louis 3.3 feet (down 1.4). The official USACE notice table continues to list Notice 215138-1, dated October 21 and listed until further notice, for channel-maintenance dredging and an auxiliary-lock closure at Melvin Price. USACE status and survey pages were reviewed; no newer local item was confirmed in the accessible official listings, and the Coast Guard notice listing returned an access restriction. These are dated planning context.
             </p>
             <p>
               <strong>Sources reviewed:</strong>
