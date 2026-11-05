@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-a-winter-lock-closure-notice-changes-in-a-shoreside-plan",
+    ariaLabel: "Read What A Winter Lock Closure Notice Changes In A Shoreside Plan",
+    dateTime: "2026-11-05",
+    dateLabel: "November 5, 2026",
+    category: "Lock Operations",
+    readTime: "4 minute read",
+    title: "What A Winter Lock Closure Notice Changes In A Shoreside Plan",
+    description: "How an advance USACE Lock 19 closure notice can give a Mississippi River handoff clearer planning context without becoming a vessel schedule or navigation instruction.",
+  },
+  {
     href: "/blog/what-an-active-dredge-notice-means-for-a-mississippi-river-handoff",
     ariaLabel: "Read What An Active Dredge Notice Means For A Mississippi River Handoff",
     dateTime: "2026-10-29",
