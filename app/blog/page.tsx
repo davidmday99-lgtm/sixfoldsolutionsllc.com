@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-a-river-forecast-range-adds-to-a-shoreside-plan",
+    ariaLabel: "Read What A River Forecast Range Adds To A Shoreside Plan",
+    dateTime: "2026-11-12",
+    dateLabel: "November 12, 2026",
+    category: "River Conditions",
+    readTime: "4 minute read",
+    title: "What A River Forecast Range Adds To A Shoreside Plan",
+    description: "Why a Mississippi River forecast range is useful planning context for a shoreside handoff, without becoming a vessel schedule, access answer, or operating instruction.",
+  },
+  {
     href: "/blog/what-a-winter-lock-closure-notice-changes-in-a-shoreside-plan",
     ariaLabel: "Read What A Winter Lock Closure Notice Changes In A Shoreside Plan",
     dateTime: "2026-11-05",
