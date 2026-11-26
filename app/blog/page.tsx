@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: "/blog/what-a-weather-update-adds-to-a-river-handoff",
+    ariaLabel: "Read What A Weather Update Adds To A River Handoff",
+    dateTime: "2026-11-26",
+    dateLabel: "November 26, 2026",
+    category: "Operations Planning",
+    readTime: "4 minute read",
+    title: "What A Weather Update Adds To A River Handoff",
+    description: "Why a current weather update belongs beside a Mississippi River shoreside request—without becoming a vessel schedule, access answer, or navigation instruction.",
+  },
+  {
     href: "/blog/what-a-river-forecast-range-adds-to-a-shoreside-plan",
     ariaLabel: "Read What A River Forecast Range Adds To A Shoreside Plan",
     dateTime: "2026-11-12",
